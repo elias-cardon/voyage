@@ -1,7 +1,31 @@
+html {
+    /*COLOR SCHEME*/
+    --regent-saint-blue: #A2C2DA;
+    --mustard: #ffe14e;
+    --aquamarine: #4effac;
+    --regent-saint-blue-light: #a9ddd6;
+    --mustard-light: #fffb20;
+    --aquamarine-light: #7effc2;
+    /*OVERLAYS*/
+    /*LIGHT*/
+    --regent-saint-blue-overlay-light: rgba(162, 194, 218, .25);
+    --mustard-overlay-light: rgba(255, 225, 78, .25);
+    --aquamarine-overlay-light: rgba(78, 255, 172, .25);
+    /*MEDIUM*/
+    --regent-saint-blue-overlay-medium: rgba(162, 194, 218, .50);
+    --mustard-overlay-medium: rgba(255, 225, 78, .50);
+    --aquamarine-overlay-medium: rgba(78, 255, 172, .50);
+    /*HIGH*/
+    --regent-saint-blue-overlay-high: rgba(162, 194, 218, .75);
+    --mustard-overlay-high: rgba(255, 225, 78, .75);
+    --aquamarine-overlay-high: rgba(78, 255, 172, .75);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto&display=swap');
 
 /* font-family: 'Cinzel', serif;
 font-family: 'Roboto', sans-serif; */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -48,14 +72,16 @@ table {
     width: 100%;
 }
 
-input, select {
+input,
+select {
     height: 2.4rem;
 }
 
-a{
+a {
     text-decoration: none;
 }
-li{
+
+li {
     list-style: none;
 }
 
@@ -63,19 +89,16 @@ li{
     h1 {
         font-size: 56px;
     }
-
     h2 {
         font-size: 50px;
     }
-
     h3 {
         font-size: 46px;
     }
-
     h4 {
         font-size: 42px;
     }
-
+    html,
     p,
     label,
     input,
@@ -91,19 +114,16 @@ li{
     h1 {
         font-size: 48px;
     }
-
     h2 {
         font-size: 42px;
     }
-
     h3 {
         font-size: 38px;
     }
-
     h4 {
         font-size: 34px;
     }
-
+    html,
     p,
     label,
     input,
@@ -119,19 +139,16 @@ li{
     h1 {
         font-size: 40px;
     }
-
     h2 {
         font-size: 34px;
     }
-
     h3 {
         font-size: 30px;
     }
-
     h4 {
         font-size: 26px;
     }
-
+    html,
     p,
     label,
     input,
@@ -147,19 +164,16 @@ li{
     h1 {
         font-size: 32px;
     }
-
     h2 {
         font-size: 26px;
     }
-
     h3 {
         font-size: 22px;
     }
-
     h4 {
         font-size: 18px;
     }
-
+    html,
     p,
     label,
     input,
@@ -169,4 +183,97 @@ li{
     option {
         font-size: 10px;
     }
+}
+
+
+/*BUTTONS*/
+
+.btn-sm,
+.btn-md,
+.btn-lg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    border-radius: .5rem;
+}
+
+.btn-sm {
+    height: 1.5rem;
+    width: 6rem;
+}
+
+.btn-md {
+    height: 2rem;
+    width: 9rem;
+}
+
+.btn-lg {
+    height: 2.5rem;
+    width: 12rem;
+}
+
+.btn-sm.regent-saint-blue,
+.btn-md.regent-saint-blue,
+.btn-lg.regent-saint-blue {
+    background-color: var(--regent-saint-blue);
+    transition: all 1s ease-in-out;
+}
+
+.btn-sm.regent-saint-blue:hover,
+.btn-md.regent-saint-blue:hover,
+.btn-lg.regent-saint-blue:hover {
+    box-shadow: inset 15rem 0 0 var(--regent-saint-blue-light);
+}
+
+.btn-sm.mustard,
+.btn-md.mustard,
+.btn-lg.mustard {
+    background-color: var(--mustard);
+    transition: all 1s ease-in-out;
+}
+
+.btn-sm.mustard:hover,
+.btn-md.mustard:hover,
+.btn-lg.mustard:hover {
+    box-shadow: inset 15rem 0 0 var(--mustard-light);
+}
+
+.btn-sm.aquamarine,
+.btn-md.aquamarine,
+.btn-lg.aquamarine {
+    background-color: var(--aquamarine);
+    transition: all 1s ease-in-out;
+}
+
+.btn-sm.aquamarine:hover,
+.btn-md.aquamarine:hover,
+.btn-lg.aquamarine:hover {
+    box-shadow: inset 15rem 0 0 var(--aquamarine-light);
+}
+
+
+/* TO BE REMOVED */
+
+.button-presentation {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/*FORMS*/
+
+form {
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    margin-bottom: .5rem;
 }
