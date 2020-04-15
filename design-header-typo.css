@@ -398,12 +398,14 @@ button {
 .dropdown-lg.regent-saint-blue {
     background-color: var(--regent-saint-blue);
     transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
 }
 
 .dropdown-sm.regent-saint-blue:hover,
 .dropdown-md.regent-saint-blue:hover,
 .dropdown-lg.regent-saint-blue:hover {
-    box-shadow: inset 15rem 0 0 var(--regent-saint-blue-light);
+    box-shadow: inset 10rem 0 0 var(--regent-saint-blue-light);
+    -webkit-box-shadow: inset 10rem 0 0 var(--regent-saint-blue-light);
 }
 
 .dropdown-sm.mustard,
@@ -411,12 +413,14 @@ button {
 .dropdown-lg.mustard {
     background-color: var(--mustard);
     transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
 }
 
 .dropdown-sm.mustard:hover,
 .dropdown-md.mustard:hover,
 .dropdown-lg.mustard:hover {
-    box-shadow: inset 15rem 0 0 var(--mustard-light);
+    box-shadow: inset 10rem 0 0 var(--mustard-light);
+    -webkit-box-shadow: inset 10rem 0 0 var(--mustard-light);
 }
 
 .dropdown-sm.aquamarine,
@@ -424,12 +428,14 @@ button {
 .dropdown-lg.aquamarine {
     background-color: var(--aquamarine);
     transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
 }
 
 .dropdown-sm.aquamarine:hover,
 .dropdown-md.aquamarine:hover,
 .dropdown-lg.aquamarine:hover {
-    box-shadow: inset 15rem 0 0 var(--aquamarine-light);
+    box-shadow: inset 10rem 0 0 var(--aquamarine-light);
+    -webkit-box-shadow: inset 10rem 0 0 var(--aquamarine-light);
 }
 
 
@@ -457,8 +463,39 @@ button {
     width: 100%;
 }
 
-.dropdown-content {
+.dropdown-content,
+.dropdown-content-js {
     display: none;
+}
+
+.dropdown-lg .dropdown-content-js {
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    top: 2.5rem;
+    z-index: 1000;
+    padding: .5rem;
+    width: 100%;
+}
+
+.dropdown-md .dropdown-content-js {
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    top: 2rem;
+    z-index: 1000;
+    padding: .5rem;
+    width: 100%;
+}
+
+.dropdown-sm .dropdown-content-js {
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    top: 1.5rem;
+    z-index: 1000;
+    padding: .5rem;
+    width: 100%;
 }
 
 .dropdown-content:hover {
