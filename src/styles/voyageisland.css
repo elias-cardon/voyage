@@ -1,0 +1,133 @@
+/*GENERAL MARKUP DESIGN*/
+
+html {
+    /*TYPO SIZE BASE 8PX*/
+    --base-font-size: 8px;
+    /*COLORS SHEME*/
+    --var-black: #11151c;
+    --var-white: #FFFFFF;
+    --var-dark: #515459;
+    --var-dark-light: #bebfc1;
+    --var-primary: #F05537;
+    --var-primary-light: #f6a291;
+    --var-secondary: #1f487e;
+    --var-secondary-light: #708aac;
+    --var-success: #018e42;
+    --var-success-light: #5db786;
+    --var-warning: #f7d002;
+    --var-warning-light: #fae575;
+    --var-danger: #bf1a2f;
+    --var-danger-light: #d05867;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+
+/*BREAKPOINTS*/
+
+
+/*XS BREAKPOINT*/
+
+@media screen and (min-width:380px) and (max-width:599px) {}
+
+
+/*SM BREAKPOINT*/
+
+@media screen and (min-width:600px) and (max-width:960px) {}
+
+
+/*MD BREAKPOINT*/
+
+@media screen and (min-width:961px) and (max-width:1280px) {}
+
+
+/*LG BREAKPOINT*/
+
+@media screen and (min-width:1281px) and (max-width:1500px) {}
+
+
+/*XL BREAKPOINT */
+
+@media screen and (min-width:1501px) {}
+
+
+/*DESTINATION 1 */
+
+section.destination-half,
+section.destination-two-third,
+section.destination-full {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+section.destination-half {
+    height: 50vh;
+}
+
+section.destination-two-third {
+    height: 66vh;
+}
+
+section.destination-full {
+    height: 100vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+section.jumbotron {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+section.jumbotron video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.col {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.col img.full {
+    height: 100%;
+    width: 100%;
+}
+
+
+/*BACKGROUNDS*/
+
+.bg-island-port {
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-island-port {
+    background-image: url(../img/backgrounds/island_port.jpg);
+    background-position: top;
+}
+
+
+/*SIZING UTILITIES*/
+
+.w-100 {
+    width: 100%;
+}
+
+.w-200 {
+    width: 200%;
+}
