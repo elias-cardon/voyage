@@ -64,6 +64,17 @@ blockquote {
     flex-direction: column;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+
+/*TABLES*/
+
 table {
     display: block;
     overflow-y: scroll;
@@ -72,9 +83,47 @@ table {
     width: 100%;
 }
 
+table th:nth-child(1) {
+    width: 10vw;
+}
+
+table th:nth-child(2) {
+    width: 40vw;
+}
+
+th {
+    background-color: #FFF;
+    min-height: 5rem;
+}
+
+tr:nth-child(odd) {
+    background-color: #F0F0F0;
+}
+
+tr:nth-child(even) {
+    background-color: ;
+}
+
+tr td:nth-child(even) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+tr td,
+tr th {
+    min-height: 4rem;
+}
+
+table img {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
 input,
 select {
-    height: 2.4rem;
+    height: 2rem;
 }
 
 a {
@@ -188,6 +237,10 @@ li {
 
 /*BUTTONS*/
 
+button {
+    border: none
+}
+
 .btn-sm,
 .btn-md,
 .btn-lg {
@@ -263,17 +316,97 @@ li {
 
 /*FORMS*/
 
-form {
+form.form-lg {
     width: 100%;
+}
+
+form.form-md {
+    width: 66%;
+}
+
+form.form-sm {
+    width: 50%;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.form-group-inline {
+    display: flex;
+    flex-direction: row;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 
 label {
-    margin-bottom: .5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    margin-left: .5rem;
+    transform: scale(1.5);
+    -moz-transform: scale(1.5);
+}
+
+
+/*FOOTER*/
+
+footer .row:nth-child(1) {
+    height: 33vh;
+}
+
+footer .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #F7F7F7;
+}
+
+.row.brand {
+    height: 5vh;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .col {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer li {
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+}
+
+footer h5 {
+    font-size: .5rem;
+}
+
+footer a {
+    font-size: .5rem;
+    color: rgb(58, 58, 58);
+}
+
+footer a:hover {
+    color: black;
+}
+
+footer p.brand {
+    font-size: .5rem;
 }
