@@ -29,7 +29,6 @@
         font-size: 42px;
     }
 
-    p,
     label,
     input,
     select,
@@ -57,7 +56,6 @@
         font-size: 34px;
     }
 
-    p,
     label,
     input,
     select,
@@ -85,7 +83,6 @@
         font-size: 26px;
     }
 
-    p,
     label,
     input,
     select,
@@ -113,7 +110,6 @@
         font-size: 18px;
     }
 
-    p,
     label,
     input,
     select,
@@ -128,41 +124,6 @@
 /********************************
 * Basics
 *********************************/
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    outline: 0;
-}
-
-main {
-    min-height: 100vh;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    font-family: 'Cinzel', serif;
-}
-
-p,
-label,
-input,
-select,
-a,
-button,
-option {
-    font-family: 'Roboto', sans-serif;
-}
-
-h2 {
-    font-size: 1.25rem;
-    margin-top: 0;
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
 ul {
     margin: 0 0 1.5rem;
     padding: 0;

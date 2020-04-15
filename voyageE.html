@@ -15,7 +15,7 @@
             <ul class="carousel-items">
                 <li class="carousel-item">
                     <div class="card">
-                        <h2 class="card-title">Tunisie</h2>
+                        <h2 class="card-title" id="ancre_F">Tunisie</h2>
                         <img src="src/img/pictures/Tunisie/Tunisie.png" alt="Drapeau_Tunisie" width="99.9%" />
                         <div class="card-content">
                             <p>Il y a tant de choses à découvrir dans chaque région de la Tunisie : des paysages contrastés, un littoral long de 1250 km parsemé d’îles et d’archipels, des traditions et coutumes diverses, un riche héritage historique. Nous vous présentons ces régions en les répartissant, par commodité, en trois zones : le nord, le centre et le sud.</p>
@@ -110,7 +110,7 @@
                     <tbody>
                         <tr>
                             <td>Ambiance</td>
-                            <td><img src="src/img/icons/danger.png" alt="danger cross icon"></td>
+                            <td><img src="src/img/icons/success.png" alt="success cross icon"></td>
                         </tr>
                         <tr>
                             <td>Services</td>
@@ -118,7 +118,7 @@
                         </tr>
                         <tr>
                             <td>Détente</td>
-                            <td><img src="src/img/icons/danger.png" alt="danger cross icon"></td>
+                            <td><img src="src/img/icons/success.png" alt="success cross icon"></td>
                         </tr>
                         <tr>
                             <td>Famille</td>
@@ -159,7 +159,7 @@
                     <tbody>
                         <tr>
                             <td>Ambiance</td>
-                            <td><img src="src/img/icons/danger.png" alt="danger cross icon"></td>
+                            <td><img src="src/img/icons/success.png" alt="danger cross icon"></td>
                         </tr>
                         <tr>
                             <td>Services</td>
@@ -167,7 +167,7 @@
                         </tr>
                         <tr>
                             <td>Détente</td>
-                            <td><img src="src/img/icons/danger.png" alt="danger cross icon"></td>
+                            <td><img src="src/img/icons/success.png" alt="danger cross icon"></td>
                         </tr>
                         <tr>
                             <td>Famille</td>
@@ -203,7 +203,7 @@
                     <tbody>
                         <tr>
                             <td>Ambiance</td>
-                            <td><img src="src/img/icons/danger.png" alt="danger cross icon"></td>
+                            <td><img src="src/img/icons/success.png" alt="danger cross icon"></td>
                         </tr>
                         <tr>
                             <td>Services</td>
@@ -211,7 +211,7 @@
                         </tr>
                         <tr>
                             <td>Détente</td>
-                            <td><img src="src/img/icons/danger.png" alt="danger cross icon"></td>
+                            <td><img src="src/img/icons/success.png" alt="danger cross icon"></td>
                         </tr>
                         <tr>
                             <td>Famille</td>
@@ -247,7 +247,7 @@
                     <tbody>
                         <tr>
                             <td>Ambiance</td>
-                            <td><img src="src/img/icons/danger.png" alt="danger cross icon"></td>
+                            <td><img src="src/img/icons/success.png" alt="success cross icon"></td>
                         </tr>
                         <tr>
                             <td>Services</td>
@@ -255,7 +255,7 @@
                         </tr>
                         <tr>
                             <td>Détente</td>
-                            <td><img src="src/img/icons/danger.png" alt="danger cross icon"></td>
+                            <td><img src="src/img/icons/success.png" alt="success cross icon"></td>
                         </tr>
                         <tr>
                             <td>Famille</td>
@@ -291,7 +291,7 @@
                     <tbody>
                         <tr>
                             <td>Ambiance</td>
-                            <td><img src="src/img/icons/danger.png" alt="danger cross icon"></td>
+                            <td><img src="src/img/icons/success.png" alt="success cross icon"></td>
                         </tr>
                         <tr>
                             <td>Services</td>
@@ -307,6 +307,64 @@
                         </tr>
                     </tbody>
             </table>
+            </div>
+            <div class="Avis">
+                <h2>Votre avis</h2>
+                <form class="form-md" action="" target="_self" method="POST">
+                    <div class="form-group">
+                        <label for="user_first_name">Renseigner votre nom</label>
+                        <input type="text" id="user_first_name" name="user_first_name" placeholder="Dupont" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="user_last_name">Renseigner votre prénom</label>
+                        <input type="text" id="user_last_name" name="user_last_name" placeholder="Jean" required>
+                    </div>
+                    <div class="row">
+                        Avez-vous des Enfants ?
+                        <div class="form-group-inline">
+                            <label for="example">Oui</label>
+                            <input type="radio" name="example" id="example">
+                        </div>
+                        <div class="form-group-inline">
+                            <label for="example">Non</label>
+                            <input type="radio" name="example" id="example">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Si oui, combien ?</label>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="">A quelle période souhaitez-vous allez en Tunisie ?</label>
+                        <input type="date">
+                    </div>
+                    <div class="row">
+                        Que cherchez-vous lors de vos voyages ?
+                    <div class="form-group-inline">
+                        <label for="choiceType">Détente</label>
+                        <input type="checkbox" name="" id="choiceType">
+                    </div>
+                    <div class="form-group-inline">
+                        <label for="choiceType">Nouveaux horizons</label>
+                        <input type="checkbox" name="" id="choiceType">
+                    </div>
+                    <div class="form-group-inline">
+                        <label for="choiceType">Aventures</label>
+                        <input type="checkbox" name="" id="choiceType">
+                    </div>
+                    <div class="form-group-inline">
+                        <label for="choiceType">Sport</label>
+                        <input type="checkbox" name="" id="choiceType">
+                    </div>
+                    </div>
+                    <button type="submit" class="btn-md regent-saint-blue"><a href="#ancre_F">Valider</a></button>
+                </form>
             </div>
     </main>
 </body>
