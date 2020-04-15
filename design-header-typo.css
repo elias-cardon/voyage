@@ -25,6 +25,7 @@ label,
 input,
 select,
 a,
+li,
 button,
 option {
     font-family: 'Roboto', sans-serif;
@@ -81,6 +82,7 @@ li{
     input,
     select,
     a,
+    li,
     button,
     option {
         font-size: 34px;
@@ -109,6 +111,7 @@ li{
     input,
     select,
     a,
+    li,
     button,
     option {
         font-size: 26px;
@@ -137,6 +140,7 @@ li{
     input,
     select,
     a,
+    li,
     button,
     option {
         font-size: 18px;
@@ -165,6 +169,7 @@ li{
     input,
     select,
     a,
+    li,
     button,
     option {
         font-size: 10px;

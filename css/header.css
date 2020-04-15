@@ -1,0 +1,135 @@
+/* HEADER */
+header{
+    /* background-color: var(--primarycolor) ; */
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondaryColor);
+}
+.block-items{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    background-color: var(--primarycolor);
+    border: 0px solid black;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    height: 100%;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+header .block-items h1{
+    margin-left: 10px;
+}
+
+/* VIDEO HEADER */
+.video_header{
+    display: flex;
+    justify-content: center;
+    padding-top:15px;
+}
+.video_header video{
+    width: 100%;
+    z-index:10;
+}
+.video_header h2{
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: bold;
+    align-self: center;
+    z-index: 11;
+    color: white;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+.video_header h2:before{
+    content: "<<";
+}
+.video_header h2:after{
+    content: ">>";
+}
+
+/* NAV */
+nav{
+    background-color: var(--secondaryColor);
+    position: sticky;
+    top:0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    z-index:12;
+}
+nav ul li{
+    cursor: pointer;
+}
+.menu_deroulant{
+    display: flex;
+    justify-content: space-around;
+}
+nav .sous_menu{
+    display: none;
+}
+nav ul .menu:hover .sous-menu ul{
+    display: block;
+}
+
+/* MAIN TEST */
+
+/* VAR */
+
+:root{
+    --primarycolor:#A2C2DA;
+    --secondaryColor:#FFE14E;
+}
+/* MEDIAS HEADER */
+
+@media screen and (min-width:1200px) {
+    #plane_icon_header{
+        width: 56px;
+    }
+    header,nav{
+        height: 150px;
+    }
+    .block-items{
+        width: 450px;
+    }
+}
+@media screen and (min-width: 900px) and (max-width:1199px){
+    #plane_icon_header{
+        width: 48px;
+    }
+    header{
+        height: 100px;
+    }
+    .block-items{
+        width: 370px;
+    }
+}
+@media screen and (min-width:320px) and (max-width:899px) {
+    #plane_icon_header{
+        width: 40px;
+    }
+    header{
+        height: 100px;
+    }
+    .block-items{
+        width: 318px;
+    }
+}
+@media screen and (max-width:319px) {
+    #plane_icon_header{
+        width: 32px;
+    }
+    header{
+        height: 40x;
+    }
+    .block-items{
+        width: 260px;
+    }
+}
+
+/* KEYFRAMES */
+/*fadeIn*/
+@keyframes voyagez{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1;
+    }
+}
