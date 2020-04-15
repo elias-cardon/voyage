@@ -257,12 +257,6 @@ header {
     padding:0.5rem;
 }
 
-header .block-items h1 {
-    margin-left: 10px;
-    animation-name: voyagez;
-    animation-duration: 3s;
-}
-
 #plane_icon_header {
     -webkit-animation-name: bounceInUp;
     animation-name: bounceInUp;
