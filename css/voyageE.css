@@ -160,6 +160,10 @@ main {
     animation-name: rollIn;
     animation-duration: 2s;
 }
+#titre
+{
+    text-align: center;
+}
 
 
 
