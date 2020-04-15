@@ -368,6 +368,8 @@ table {
     border-collapse: collapse;
     table-layout: fixed;
     width: 100%;
+    animation-name: rollIn;
+    animation-duration: 2s;
 }
 
 table th:nth-child(1) {
