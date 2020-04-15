@@ -69,9 +69,11 @@ header .block-items h1 {
 nav {
     /* background-color: #4EFFAC; */
     position: sticky;
-    top: 0;
+    top:0;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     z-index: 1100;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav ul li {
@@ -102,8 +104,13 @@ nav li:hover {
 
 
 /* MAIN TEST */
-
-
+main{
+    background-color: chartreuse;
+}
+/* FOOTER TEST */
+footer{
+    background-color: gold;
+}
 /* VAR */
 
 :root {
