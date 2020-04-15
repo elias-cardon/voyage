@@ -457,10 +457,21 @@ button {
     display: flex;
     position: absolute;
     background-color: #FFF;
-    top: 2rem;
     z-index: 1000;
     padding: 1rem;
     width: 100%;
+}
+
+.dropdown-lg img:hover+.dropdown-content {
+    top: 2.5rem
+}
+
+.dropdown-md img:hover+.dropdown-content {
+    top: 2rem
+}
+
+.dropdown-sm img:hover+.dropdown-content {
+    top: 1.5rem
 }
 
 .dropdown-content,
