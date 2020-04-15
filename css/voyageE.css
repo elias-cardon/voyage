@@ -267,6 +267,8 @@ header .block-items h1 {
     -webkit-animation-name: bounceInUp;
     animation-name: bounceInUp;
     animation-duration: 3s;
+    height: 10%;
+    width: 10%;
 }
 
 
