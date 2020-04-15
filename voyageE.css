@@ -1,56 +1,166 @@
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto&display=swap');
+
+@media screen and (min-width:1200px) {
+    h1 {
+        font-size: 56px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 46px;
+    }
+
+    h4 {
+        font-size: 42px;
+    }
+
+    p,
+    label,
+    input,
+    select,
+    a,
+    button,
+    option {
+        font-size: 34px;
+    }
+}
+
+@media screen and (min-width:900px) and (max-width:1199px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 42px;
+    }
+
+    h3 {
+        font-size: 38px;
+    }
+
+    h4 {
+        font-size: 34px;
+    }
+
+    p,
+    label,
+    input,
+    select,
+    a,
+    button,
+    option {
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:899px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 26px;
+    }
+
+    p,
+    label,
+    input,
+    select,
+    a,
+    button,
+    option {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:319px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    p,
+    label,
+    input,
+    select,
+    a,
+    button,
+    option {
+        font-size: 10px;
+    }
+}
+/*Carousel*/
+
 /********************************
 * Basics
 *********************************/
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
 }
 
-body,
-button,
+main {
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Cinzel', serif;
+}
+
+p,
+label,
 input,
 select,
-optgroup,
-textarea {
-    color: #3d4852;
-    font-family: 'Muli', sans-serif;
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-h1 {
-    font-size: 2rem;
-    margin: 2rem auto 1rem;
-    line-height: 1;
+a,
+button,
+option {
+    font-family: 'Roboto', sans-serif;
 }
 
 h2 {
     font-size: 1.25rem;
     margin-top: 0;
-}
-
-a {
-    color: inherit;
-    transition: 0.25s all ease-in-out;
-}
-
-a:visited {
-    color: #3d4852;
-}
-
-a:hover,
-a:focus,
-a:active {
-    background-color: #3d4852;
-    color: white;
-}
-
-a:focus {
-    outline: thin solid #3d4852;
-}
-
-a:hover,
-a:active {
-    outline: 0;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 a.button {
@@ -89,12 +199,6 @@ li {
     display: inline-block;
 }
 
-svg {
-    fill: currentColor;
-    width: 1.5rem;
-    height: 1.5rem;
-}
-
 img {
     height: auto;
     margin-bottom: .5rem;
@@ -113,16 +217,17 @@ main {
     margin: auto;
 }
 
-header {
-    padding: 1rem 2rem;
-    text-align: center;
-}
 
 .card {
     border: 1px solid #bac6d3;
     border-radius: 8px;
     padding: 1rem;
+    height: 100%;
+    animation-name: rollIn;
+    animation-duration: 2s;
 }
+
+
 
 /********************************
 * Carousel styles
@@ -131,77 +236,77 @@ header {
     display: flex;
     overflow-x: scroll;
     padding: 1rem 0;
-    scroll-snap-type: x mandatory;
 }
 
 .carousel-item {
     flex: 1 0 250px;
-    margin-left: 1rem;
-    scroll-snap-align: start;
+    margin-left: 1rem;}
+
+.Tunisie h2
+{
+    border-top: 4px dotted gray;
+    position: relative;
+    top: 5px;
+    padding-top: 2%;
+    animation-name: rollIn;
+    animation-duration: 2s;
+
+}
+/*block droite*/
+p
+{
+    font-size: 20px;
 }
 
-::-webkit-scrollbar-track {
-    background-color: #F5F5F5;
+.right, .droite
+{
+    animation-name: rollIn;
+    animation-duration: 2s;
 }
 
-::-webkit-scrollbar {
-    height: 6px;
-    background-color: #F5F5F5;
+.right
+{
+    display: flex;
+    flex-direction: row;
 }
 
-::-webkit-scrollbar-thumb {
-    background-color: #3d4852;
-    border-radius: 3px;
+.droite
+{
+    text-align: right;
+}
+/*block gauche*/
+.left, .gauche
+{
+    animation-name: rollIn;
+    animation-duration: 2s;
+}
+.left
+{
+    display: flex;
+    flex-direction: row-reverse;
+    animation-name: rollIn;
+    animation-duration: 2s;
+}
+.gauche
+{
+    text-align: left;
+}
+/*fondu images*/
+.fondu_img
+{
+    filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  -ms-filter: grayscale(1);
 }
 
-
-/********************************
-* Breakpoints
-*********************************/
-@media screen and (min-width: 576px) {
-    .carousel-item {
-        flex-basis: 300px;
-    }
-}
-
-@media screen and (min-width: 992px) {
-
-    body,
-    button,
-    input,
-    select,
-    optgroup,
-    textarea {
-        font-size: 1.125rem;
-    }
-
-    h1 {
-        font-size: 2.75rem;
-    }
-
-    .carousel-item {
-        flex-basis: 325px;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    h1 {
-        font-size: 4rem;
-    }
-
-    .carousel-item {
-        flex-basis: 450px;
-    }
-}
-
-@media screen and (min-width: 1600px) {
-
-    body,
-    button,
-    input,
-    select,
-    optgroup,
-    textarea {
-        font-size: 1.25rem;
-    }
+.fondu_img:hover
+{
+    filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  -o-filter: grayscale(0);
+  -ms-filter: grayscale(0);
+  transition: all 225ms 0ms ease-in-out
 }
