@@ -126,7 +126,8 @@ section.jumbotron video {
 
 /*BACKGROUNDS*/
 
-.bg-island-port {
+.bg-island-port,
+.bg-blue-lagoon-beach {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -135,6 +136,11 @@ section.jumbotron video {
 .bg-island-port {
     background-image: url(../img/backgrounds/island_port.jpg);
     background-position: top;
+}
+
+.bg-blue-lagoon-beach {
+    background-image: url(../img/backgrounds/blue_lagoon_beach_iceland.jpg);
+    background-position: center;
 }
 
 
@@ -232,4 +238,15 @@ section.jumbotron video {
 
 .w-200 {
     width: 200%;
+}
+
+
+/*MARGIN PADDING UTILITIES*/
+
+.ml-2 {
+    margin-left: 2rem;
+}
+
+.mr-2 {
+    margin-right: 2rem;
 }
