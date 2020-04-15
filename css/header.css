@@ -1,3 +1,8 @@
+
+
+/* https://astucesdivi.com/menu-sticky-on-scroll-divi/ */
+
+
 /* HEADER */
 
 header {
@@ -16,6 +21,7 @@ header {
     height: 100%;
     border-radius: 3px;
     margin-top: 15px;
+    padding:0.5rem;
 }
 
 header .block-items h1 {
@@ -70,6 +76,7 @@ nav {
     /* background-color: #4EFFAC; */
     position: sticky;
     top:0;
+    flex-basis: 100%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     z-index: 1100;
     display: flex;
@@ -120,7 +127,7 @@ footer{
 }
 
 
-/* MEDIAS HEADER */
+/* MEDIAS HEADER PLANE LOGO */
 
 @media screen and (min-width:1200px) {
     #plane_icon_header {
