@@ -1,3 +1,5 @@
+
+
 /* https://astucesdivi.com/menu-sticky-on-scroll-divi/ */
 
 
@@ -19,7 +21,7 @@ header {
     height: 100%;
     border-radius: 15px;
     margin-top: 15px;
-    padding: 0.5rem;
+    padding:0.5rem;
 }
 
 header .block-items h1 {
@@ -72,14 +74,13 @@ header .block-items h1 {
 
 nav {
     /* background-color: #4EFFAC; */
-    position: static;
-    top: 0;
+    position: sticky;
+    top:0;
     flex-basis: 100%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     z-index: 1100;
     display: flex;
     justify-content: space-around;
-    width: 100%;
 }
 
 nav ul li {
@@ -110,19 +111,13 @@ nav li:hover {
 
 
 /* MAIN TEST */
-
-main {
+main{
     background-color: chartreuse;
 }
-
-
 /* FOOTER TEST */
-
-footer {
+footer{
     background-color: gold;
 }
-
-
 /* VAR */
 
 :root {
