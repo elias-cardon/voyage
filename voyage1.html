@@ -10,11 +10,47 @@
     <link rel="stylesheet" href="src/css/voyage.css">
     <link rel="stylesheet" href="src/css/voyageisland.css">
     <link rel="shortcut icon" type="image/x-icon" href="src/img/icons/iceland_flag.png">
+    <!--JQERY CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--OWN SCRIPTS-->
+    <script src="src/js/dropdownShow.js"></script>
+    <script src="src/js/navScrollToStick.js"></script>
 </head>
 
 <body>
+    <!--HEADER-->
+    <header>
+        <!--NAVBAR -->
+        <nav>
+            <div class="dropdown dropdown-md regent-saint-blue">
+                <p>Continent</p>
+                <img src="src/img/icons/arrow.png">
+                <div class="dropdown-content-js">
+                    <ul>
+                        <li>lorem</li>
+                        <li>dolor</li>
+                        <li>Ipsum</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
 
-    <main>
+            <img id="plane_icon_header" src="src/img/icons/plane.png" alt="a picture of a plane">
+
+            <div class="dropdown dropdown-md regent-saint-blue">
+                <p>Personne</p>
+                <img src="src/img/icons/arrow.png">
+                <div class="dropdown-content-js">
+                    <ul>
+                        <li>lorem</li>
+                        <li>dolor</li>
+                        <li>Ipsum</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--NAVBAR-->
+        <!--JUMBOTRON VIDEO-->
         <section class="jumbotron">
             <div class="bg-overlay-dark-medium w-100 absolute">
                 <div class="col p-0">
@@ -33,8 +69,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col p-0">
-                    <h1 class="title w-200"> Bienvenue en Islande</h1>
+                <div class="col p-0 w-200">
+                    <h1 class="title"> Bienvenue en Islande</h1>
                 </div>
                 <div class="col p-0">
                 </div>
@@ -44,6 +80,12 @@
             </video>
 
         </section>
+
+    </header>
+    <!--HEADER END-->
+
+    <main>
+
         <section class="destination-full">
             <div class="col text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, ut delectus harum quaerat hic molestias temporibus autem iure aliquam nisi labore atque, porro error repellat, eligendi totam voluptatibus quos quod. Lorem ipsum, dolor sit
                 amet consectetur adipisicing elit. Quod, ipsum voluptatem fugiat odit nihil aut, dignissimos accusantium ex eaque odio dolor. Temporibus iste, perferendis voluptatibus a quaerat ea sequi officia.</div>
@@ -273,6 +315,11 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        window.load = dropdownShowCOntent();
+        navScrollToStick();
+    </script>
 
 </body>
 
