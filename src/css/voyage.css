@@ -462,6 +462,7 @@ button {
     align-items: center;
     color: #000;
     border-radius: .5rem;
+    cursor: pointer;
 }
 
 .btn-sm {
@@ -571,6 +572,7 @@ button {
     transform: rotate(90deg);
     margin-left: 1rem;
     background-color: #FFF;
+    cursor: pointer;
 }
 
 .dropdown-lg img {
