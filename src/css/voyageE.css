@@ -362,7 +362,38 @@ nav li:hover {
 
 
 /*main*/
+.card {
+    border: 1px solid #bac6d3;
+    border-radius: 8px;
+    padding: 1rem;
+    height: 100%;
+    animation-name: rollIn;
+    animation-duration: 2s;
+}
 
+#titre {
+    text-align: center;
+}
+
+.carousel-items {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+}
+
+.carousel-item {
+    flex: 1 0 250px;
+    margin-left: 1rem;
+}
+
+.Tunisie h2 {
+    border-top: 4px dotted gray;
+    position: relative;
+    top: 5px;
+    padding-top: 2%;
+    animation-name: rollIn;
+    animation-duration: 2s;
+}
 
 /* CE N'EST PAS POSSIBLE DE FAIRE CELA DANS LA FEUILLE DE STYLE GENERAL SANS NOUS EN PARLER  SURTOUT SUR DES BALISES GENERALES*/
 
@@ -398,41 +429,9 @@ main {
     margin: auto;
 }
 
-.card {
-    border: 1px solid #bac6d3;
-    border-radius: 8px;
-    padding: 1rem;
-    height: 100%;
-    animation-name: rollIn;
-    animation-duration: 2s;
-}
-
-#titre {
-    text-align: center;
-}
-
-.carousel-items {
-    display: flex;
-    overflow-x: scroll;
-    padding: 1rem 0;
-}
-
-.carousel-item {
-    flex: 1 0 250px;
-    margin-left: 1rem;
-}
-
-.Tunisie h2 {
-    border-top: 4px dotted gray;
-    position: relative;
-    top: 5px;
-    padding-top: 2%;
-    animation-name: rollIn;
-    animation-duration: 2s;
-}
-
-
 /*block droite*/
+
+
 
 p {
     font-size: 20px;
