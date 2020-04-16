@@ -6,16 +6,17 @@
     <title>Las Vegas</title>
     <link rel="stylesheet" type="text/css" href="css/voyageB.css">
     <link rel="shortcut icon" type="image/x-icon" href="src/img/pictures/Las Vegas/drapeau_las_vegas.png">
-     <!--JQERY CDN-->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-     <!--OWN SCRIPTS -->
-     <script src="src/js/dropdownShow.js"></script>
+    <!--JQERY CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--OWN SCRIPTS -->
+    <script src="src/js/dropdownShow.js"></script>
+    <script src="src/js/navScrollToStick.js"></script>
 </head>
 
 <body>
     <header>
         <div class="block-items">
-            <img id="plane_icon_header" src="src/img/icon/plane.png" alt="a picture of a plane">
+            <img id="plane_icon_header" src="src/img/icons/plane.png" alt="a picture of a plane">
             <h1>Voyage.com</h1>
         </div>
 
@@ -459,7 +460,8 @@
         </div>
 
         <script>
-            window.load = dropdownShowCOntent()
+            window.load = dropdownShowCOntent();
+            navScrollToStick();
         </script>
 
     </footer>
