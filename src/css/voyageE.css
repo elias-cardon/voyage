@@ -395,40 +395,6 @@ nav li:hover {
     animation-duration: 2s;
 }
 
-/* CE N'EST PAS POSSIBLE DE FAIRE CELA DANS LA FEUILLE DE STYLE GENERAL SANS NOUS EN PARLER  SURTOUT SUR DES BALISES GENERALES*/
-
-
-/*PAR AILLEURS CES ELEMENTS CE TROUVENT UNIQUEMENT AU SEIN DE TA PAGE */
-
-
-/*carousel*/
-
-
-/*ul {
-    margin: 0 0 1.5rem;
-    padding: 0;
-}
-
-li {
-    display: inline-block;
-}
-
-img {
-    height: auto;
-    margin-bottom: .5rem;
-    max-width: calc(100% + 2rem);
-    position: relative;
-}
-
-p {
-    margin: 0 0 .5rem;
-}
-
-main {
-    padding: 1rem 2rem;
-    margin: auto;
-}
-
 /*block droite*/
 
 
