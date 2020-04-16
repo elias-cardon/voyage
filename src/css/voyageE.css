@@ -328,10 +328,10 @@ nav {
     position: sticky;
     top: 0;
     flex-basis: 100%;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     z-index: 1100;
     display: flex;
     justify-content: space-around;
+    background-color: var(--regent-saint-blue);
 }
 
 nav ul li {
