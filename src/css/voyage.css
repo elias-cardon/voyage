@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto&display=swap');
 html {
     /*COLOR SCHEME*/
     --regent-saint-blue: #A2C2DA;
@@ -20,11 +21,6 @@ html {
     --mustard-overlay-high: rgba(255, 225, 78, .75);
     --aquamarine-overlay-high: rgba(78, 255, 172, .75);
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto&display=swap');
-
-/* font-family: 'Cinzel', serif;
-font-family: 'Roboto', sans-serif; */
 
 * {
     box-sizing: border-box;
@@ -55,16 +51,6 @@ option {
     font-family: 'Roboto', sans-serif;
 }
 
-form,
-section,
-header,
-main,
-footer,
-blockquote {
-    display: flex;
-    flex-direction: column;
-}
-
 .row {
     display: flex;
     flex-direction: row;
@@ -74,14 +60,458 @@ blockquote {
 }
 
 
+/* KEYFRAMES */
+
+
+/*fadeIn*/
+
+@keyframes voyagez {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes bounceInUp {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 3000px, 0);
+        transform: translate3d(0, 3000px, 0);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, -20px, 0);
+        transform: translate3d(0, -20px, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(0, 10px, 0);
+        transform: translate3d(0, 10px, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(0, -5px, 0);
+        transform: translate3d(0, -5px, 0);
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes bounceInUp {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 3000px, 0);
+        transform: translate3d(0, 3000px, 0);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, -20px, 0);
+        transform: translate3d(0, -20px, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(0, 10px, 0);
+        transform: translate3d(0, 10px, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(0, -5px, 0);
+        transform: translate3d(0, -5px, 0);
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes bounceInLeft {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-3000px, 0, 0);
+        transform: translate3d(-3000px, 0, 0);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(25px, 0, 0);
+        transform: translate3d(25px, 0, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(5px, 0, 0);
+        transform: translate3d(5px, 0, 0);
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes bounceInLeft {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-3000px, 0, 0);
+        transform: translate3d(-3000px, 0, 0);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(25px, 0, 0);
+        transform: translate3d(25px, 0, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-5px, 0, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(5px, 0, 0);
+        transform: translate3d(5px, 0, 0);
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes rollIn {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+/* VAR */
+
+:root {
+    --primarycolor: #A2C2DA;
+    --secondaryColor: #FFE14E;
+    --hoverColor: #A9DDD6;
+}
+
+
+/* HEADER */
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primarycolor);
+}
+
+.block-items {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    background-color: var(--secondaryColor);
+    border: 0px solid black;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    height: 100%;
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 0.5rem;
+}
+
+header .block-items h1 {
+    margin-left: 10px;
+    animation-name: voyagez;
+    animation-duration: 3s;
+}
+
+#plane_icon_header {
+    -webkit-animation-name: bounceInUp;
+    animation-name: bounceInUp;
+    animation-duration: 3s;
+}
+
+
+/* VIDEO HEADER */
+
+.video_header {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.video_header video {
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+}
+
+.video_header h2 {
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: bold;
+    align-self: center;
+    z-index: 1001;
+    color: white;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.video_header h2:before {
+    content: "<<";
+}
+
+.video_header h2:after {
+    content: ">>";
+}
+
+
+/* MEDIAS HEADER PLANE LOGO */
+
+@media screen and (min-width:1200px) {
+    #plane_icon_header {
+        width: 56px;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width:1199px) {
+    #plane_icon_header {
+        width: 48px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:899px) {
+    #plane_icon_header {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width:319px) {
+    #plane_icon_header {
+        width: 32px;
+    }
+}
+
+
+/* NAV */
+
+nav {
+    /* background-color: #4EFFAC; */
+    position: sticky;
+    top: 0;
+    flex-basis: 100%;
+    z-index: 1100;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--regent-saint-blue);
+}
+
+nav ul li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu_deroulant {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .menu_deroulant ul .menu ul {
+    display: none;
+}
+
+nav .menu_deroulant ul .menu:hover ul {
+    display: block;
+}
+
+.sous_menu {
+    position: absolute;
+}
+
+nav li:hover {
+    color: var(--hoverColor);
+}
+
+
+/*main*/
+
+
+/* CE N'EST PAS POSSIBLE DE FAIRE CELA DANS LA FEUILLE DE STYLE GENERAL SANS NOUS EN PARLER  SURTOUT SUR DES BALISES GENERALES*/
+
+
+/*PAR AILLEURS CES ELEMENTS CE TROUVENT UNIQUEMENT AU SEIN DE TA PAGE */
+
+
+/*carousel*/
+
+
+/*ul {
+    margin: 0 0 1.5rem;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+img {
+    height: auto;
+    margin-bottom: .5rem;
+    max-width: calc(100% + 2rem);
+    position: relative;
+}
+
+p {
+    margin: 0 0 .5rem;
+}
+
+main {
+    padding: 1rem 2rem;
+    margin: auto;
+}
+
+.card {
+    border: 1px solid #bac6d3;
+    border-radius: 8px;
+    padding: 1rem;
+    height: 100%;
+    animation-name: rollIn;
+    animation-duration: 2s;
+}
+
+#titre {
+    text-align: center;
+}
+
+.carousel-items {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+}
+
+.carousel-item {
+    flex: 1 0 250px;
+    margin-left: 1rem;
+}
+
+.Tunisie h2 {
+    border-top: 4px dotted gray;
+    position: relative;
+    top: 5px;
+    padding-top: 2%;
+    animation-name: rollIn;
+    animation-duration: 2s;
+}
+
+
+/*block droite*/
+
+p {
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.right,
+.droite {
+    animation-name: rollIn;
+    animation-duration: 2s;
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+}
+
+.droite {
+    text-align: right;
+}
+
+
+/*block gauche*/
+
+.left,
+.gauche {
+    animation-name: rollIn;
+    animation-duration: 2s;
+}
+
+.left {
+    display: flex;
+    flex-direction: row-reverse;
+    animation-name: rollIn;
+    animation-duration: 2s;
+}
+
+.gauche {
+    text-align: left;
+}
+
+
+/*fondu images*/
+
+.fondu_img {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    -ms-filter: grayscale(1);
+}
+
+.fondu_img:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    transition: all 225ms 0ms ease-in-out
+}
+
+
 /*TABLES*/
 
 table {
-    display: block;
+    align-self: center;
     overflow-y: scroll;
     border-collapse: collapse;
     table-layout: fixed;
     width: 100%;
+    animation-name: rollIn;
+    animation-duration: 2s;
+}
+
+.table_center_main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
 }
 
 table th:nth-child(1) {
@@ -149,7 +579,6 @@ li {
         font-size: 42px;
     }
     html,
-    p,
     label,
     input,
     select,
@@ -175,7 +604,6 @@ li {
         font-size: 34px;
     }
     html,
-    p,
     label,
     input,
     select,
@@ -201,7 +629,6 @@ li {
         font-size: 26px;
     }
     html,
-    p,
     label,
     input,
     select,
@@ -227,7 +654,6 @@ li {
         font-size: 18px;
     }
     html,
-    p,
     label,
     input,
     select,
@@ -611,6 +1037,8 @@ footer .col {
 footer li {
     margin-top: .25rem;
     margin-bottom: .25rem;
+    display: flex;
+    flex-direction: column;
 }
 
 footer h5 {
