@@ -6,6 +6,11 @@
     <title>Tunisie</title>
     <link rel="stylesheet" href="src/css/voyage.css">
     <link rel="stylesheet" type="text/css" href="src/css/voyageE.css">
+    <!--JQERY CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--OWN SCRIPTS -->
+    <script src="src/js/dropdownShow.js"></script>
+    <script src="src/js/navScrollToStick.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="src/img/pictures/Tunisie/Tunisie.png">
 
 </head>
@@ -20,38 +25,41 @@
 
 
         <div class="video_header">
+            <h2>Voyagez</h2>
             <video muted autoplay>
-                <source src="src/video/Tunisie.mp4" type="video/mp4">
+                <source src="src/video/island.mp4" type="video/mp4">
             </video>
 
         </div>
 
         <nav>
 
-            <div class="dropdown-md regent-saint-blue">
-                <p>Continent</p>
+            <div class="dropdown dropdown-md regent-saint-blue">
+                <p>Destinations</p>
                 <img src="src/img/icons/arrow.png">
                 <div class="dropdown-content-js">
                     <ul>
-                        <li>lorem</li>
-                        <li>dolor</li>
-                        <li>Ipsum</li>
+                        <li>Egypte</li>
+                        <li>Island</li>
+                        <li>Las Vegas</li>
                     </ul>
                 </div>
-            </div>
             </div>
 
-            <div class="dropdown-md regent-saint-blue">
-                <p>Personne</p>
+            <div class="dropdown dropdown-md regent-saint-blue">
+                <p>Redacteurs</p>
                 <img src="src/img/icons/arrow.png">
                 <div class="dropdown-content-js">
                     <ul>
-                        <li>lorem</li>
-                        <li>dolor</li>
-                        <li>Ipsum</li>
+                        <li>Elias</li>
+                        <li>Antoine</li>
+                        <li>Bryan</li>
                     </ul>
                 </div>
             </div>
+
+
+        </nav>
         </nav>
     </header>
     <main class="Tunisie">
@@ -564,7 +572,8 @@
         </div>
 
         <script>
-            window.load = dropdownShowCOntent()
+            window.load = dropdownShowCOntent();
+            navScrollToStick();
         </script>
 
     </footer>

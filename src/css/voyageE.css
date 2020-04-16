@@ -321,46 +321,6 @@ header .block-items h1 {
 }
 
 
-/* NAV */
-
-nav {
-    /* background-color: #4EFFAC; */
-    position: sticky;
-    top: 0;
-    flex-basis: 100%;
-    z-index: 1100;
-    display: flex;
-    justify-content: space-around;
-    background-color: var(--regent-saint-blue);
-}
-
-nav ul li {
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.menu_deroulant {
-    display: flex;
-    justify-content: space-around;
-}
-
-nav .menu_deroulant ul .menu ul {
-    display: none;
-}
-
-nav .menu_deroulant ul .menu:hover ul {
-    display: block;
-}
-
-.sous_menu {
-    position: absolute;
-}
-
-nav li:hover {
-    color: var(--hoverColor);
-}
-
-
 /*main*/
 /*Cadre résumé*/
 .card {
