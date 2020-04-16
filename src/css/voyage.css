@@ -332,6 +332,7 @@ nav {
     display: flex;
     justify-content: space-around;
     background-color: var(--regent-saint-blue);
+    width: 100%
 }
 
 nav ul li {
