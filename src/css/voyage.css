@@ -64,6 +64,34 @@ option {
 }
 
 
+/*SECTIONS*/
+
+
+/*DESTINATION */
+
+section.destination-half,
+section.destination-two-third,
+section.destination-full {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+section.destination-half {
+    height: 50vh;
+}
+
+section.destination-two-third {
+    height: 66vh;
+}
+
+section.destination-full {
+    height: 100vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
 /* KEYFRAMES */
 
 
@@ -479,6 +507,7 @@ button {
 .btn-lg {
     height: 2.5rem;
     width: 12rem;
+    padding: 1rem;
 }
 
 .btn-sm.regent-saint-blue,
@@ -1039,7 +1068,7 @@ footer a:hover {
     color: black;
 }
 
-footer p .brand {
+footer p.brand {
     font-size: .5rem;
 }
 
@@ -1268,12 +1297,26 @@ section.jumbotron video {
     padding: 0;
 }
 
+.m-0 {
+    margin: 0;
+}
+
 .ml-2 {
     margin-left: 2rem;
 }
 
 .mr-2 {
     margin-right: 2rem;
+}
+
+.my-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.my-2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .mb-half-point {
@@ -1289,6 +1332,11 @@ section.jumbotron video {
 
 .absolute {
     position: absolute;
+}
+
+.absolute-bottom {
+    position: absolute;
+    bottom: 0;
 }
 
 .bottom-none {
@@ -1311,4 +1359,36 @@ section.jumbotron video {
 
 .d-none {
     display: none;
+}
+
+
+/*FLEX UTILITIES*/
+
+.destination-full .row.justify-around {
+    justify-content: space-around;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+
+/*BLOCKQUOTE*/
+
+blockquote {
+    text-align: center;
+}
+
+blockquote::before {
+    content: "\201C";
+    font-size: 2rem;
+}
+
+blockquote::after {
+    content: "\201D";
+    font-size: 2rem;
 }

@@ -1,8 +1,63 @@
 .page-menu li {
     background-color: var(--regent-saint-blue-overlay-medium);
-    ;
 }
 
-.section {
-    height: 100vh;
+.bg-landing {
+    background: var(--regent-saint-blue);
+    background: radial-gradient(circle, #FFF 0%, var(--regent-saint-blue) 100%);
+}
+
+section.destination-full {
+    margin: 0;
+    padding: 0;
+}
+
+.destination-full .row {
+    justify-content: end;
+    padding: 2rem;
+}
+
+
+/*CARDS PAGE SPECIFIC*/
+
+.card-landing {
+    height: 400px;
+    width: 370px;
+    position: absolute;
+    background-color: #FFF;
+    transform-origin: bottom left;
+    -webkit-box-shadow: 0px 0px 47px -20px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 47px -20px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 47px -20px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    transition: transform 1s ease-in-out;
+    cursor: pointer;
+}
+
+.card-landing .body,
+.card-landing .footer {
+    overflow: hidden;
+    width: 100%;
+}
+
+.card-landing .body {
+    height: 90%;
+    background-color: thistle;
+}
+
+.card-landing .footer {
+    height: 10%;
+}
+
+.card-landing:nth-child(odd) .footer {
+    background-color: var(--aquamarine-light);
+}
+
+.card-landing:nth-child(even) .footer {
+    background-color: var(--regent-saint-blue-light);
+}
+
+.card-landing .body img.full {
+    height: 100%;
+    width: 100%;
 }
