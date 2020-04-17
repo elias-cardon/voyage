@@ -2,3 +2,7 @@
     background-color: var(--regent-saint-blue-overlay-medium);
     ;
 }
+
+.section {
+    height: 100vh;
+}
