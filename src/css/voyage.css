@@ -1404,3 +1404,21 @@ blockquote::after {
 
 
 /*HOVER EFFECTS*/
+
+.filter-sepia-50 {
+    filter: sepia(50);
+    transition: filter .5s ease-in-out;
+}
+
+.filter-sepia-50:hover {
+    filter: none;
+}
+
+.filter-grayscale-50 {
+    filter: grayscale(50);
+    transition: filter .5s ease-in-out;
+}
+
+.filter-grayscale-50:hover {
+    filter: none;
+}
