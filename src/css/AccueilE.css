@@ -27,7 +27,11 @@
     margin-left: 1rem;
 }
 
-p {
-    font-size: 20px;
-    padding: 0 10px;
+.Tunisie h2 {
+    border-top: 4px dotted gray;
+    position: relative;
+    top: 5px;
+    padding-top: 2%;
+    animation-name: rollIn;
+    animation-duration: 2s;
 }
