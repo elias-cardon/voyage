@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto&display=swap');
+
 html {
     /*COLOR SCHEME*/
     --regent-saint-blue: #A2C2DA;
@@ -51,6 +52,16 @@ option {
     font-family: 'Roboto', sans-serif;
 }
 
+form,
+section,
+header,
+main,
+footer,
+blockquote {
+    display: flex;
+    flex-direction: column;
+}
+
 .row {
     display: flex;
     flex-direction: row;
@@ -58,7 +69,6 @@ option {
     align-items: center;
     flex-wrap: nowrap;
 }
-
 
 /* KEYFRAMES */
 
@@ -207,16 +217,16 @@ option {
 }
 
 @keyframes rollIn {
-    from {
-        opacity: 0;
-        transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
 
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
 
 /* VAR */
 
@@ -225,8 +235,6 @@ option {
     --secondaryColor: #FFE14E;
     --hoverColor: #A9DDD6;
 }
-
-
 /* HEADER */
 
 header {
@@ -245,7 +253,7 @@ header {
     height: 100%;
     border-radius: 15px;
     margin-top: 15px;
-    padding: 0.5rem;
+    padding:0.5rem;
 }
 
 header .block-items h1 {
@@ -293,7 +301,6 @@ header .block-items h1 {
     content: ">>";
 }
 
-
 /* MEDIAS HEADER PLANE LOGO */
 
 @media screen and (min-width:1200px) {
@@ -319,10 +326,73 @@ header .block-items h1 {
         width: 32px;
     }
 }
+/* NAV */
 
+nav {
+    /* background-color: #4EFFAC; */
+    position: sticky;
+    top:0;
+    flex-basis: 100%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    z-index: 1100;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu_deroulant {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .menu_deroulant ul .menu ul {
+    display: none;
+}
+
+nav .menu_deroulant ul .menu:hover ul {
+    display: block;
+}
+
+.sous_menu {
+    position: absolute;
+}
+
+nav li:hover {
+    color: var(--hoverColor);
+}
 
 /*main*/
-/*Cadre résumé*/
+/*carousel*/
+ul {
+    margin: 0 0 1.5rem;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+img {
+    height: auto;
+    margin-bottom: .5rem;
+    max-width: calc(100% + 2rem);
+    position: relative;
+}
+
+p {
+    margin: 0 0 .5rem;
+}
+
+main {
+    padding: 1rem 2rem;
+    margin: auto;
+}
+
+
 .card {
     border: 1px solid #bac6d3;
     border-radius: 8px;
@@ -331,8 +401,8 @@ header .block-items h1 {
     animation-name: rollIn;
     animation-duration: 2s;
 }
-
-#titre {
+#titre
+{
     text-align: center;
 }
 
@@ -344,26 +414,252 @@ header .block-items h1 {
 
 .carousel-item {
     flex: 1 0 250px;
-    margin-left: 1rem;
-}
+    margin-left: 1rem;}
 
-.Tunisie h2 {
+.Tunisie h2
+{
     border-top: 4px dotted gray;
     position: relative;
     top: 5px;
     padding-top: 2%;
     animation-name: rollIn;
     animation-duration: 2s;
+
 }
 
 /*block droite*/
-
-
-
-p {
+p
+{
     font-size: 20px;
     padding: 0 10px;
 }
+
+.right, .droite
+{
+    animation-name: rollIn;
+    animation-duration: 2s;
+}
+
+.right
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.droite
+{
+    text-align: right;
+}
+
+/*block gauche*/
+.left, .gauche
+{
+    animation-name: rollIn;
+    animation-duration: 2s;
+}
+.left
+{
+    display: flex;
+    flex-direction: row-reverse;
+    animation-name: rollIn;
+    animation-duration: 2s;
+}
+.gauche
+{
+    text-align: left;
+}
+
+/*fondu images*/
+.fondu_img
+{
+    filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+}
+
+.fondu_img:hover
+{
+    filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  -o-filter: grayscale(0);
+  -ms-filter: grayscale(0);
+  transition: all 225ms 0ms ease-in-out
+}
+
+/*TABLES*/
+
+table {
+    align-self: center;
+    overflow-y: scroll;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    animation-name: rollIn;
+    animation-duration: 2s;
+}
+
+.table_center_main
+{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+}
+
+table th:nth-child(1) {
+    width: 10vw;
+}
+
+table th:nth-child(2) {
+    width: 40vw;
+}
+
+th {
+    background-color: #FFF;
+    min-height: 5rem;
+}
+
+tr:nth-child(odd) {
+    background-color: #F0F0F0;
+}
+
+tr:nth-child(even) {
+    background-color: ;
+}
+
+tr td:nth-child(even) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+tr td,
+tr th {
+    min-height: 4rem;
+}
+
+table img {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+input,
+select {
+    height: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+@media screen and (min-width:1200px) {
+    h1 {
+        font-size: 56px;
+    }
+    h2 {
+        font-size: 50px;
+    }
+    h3 {
+        font-size: 46px;
+    }
+    h4 {
+        font-size: 42px;
+    }
+    html,
+    label,
+    input,
+    select,
+    a,
+    li,
+    button,
+    option {
+        font-size: 34px;
+    }
+}
+
+@media screen and (min-width:900px) and (max-width:1199px) {
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 42px;
+    }
+    h3 {
+        font-size: 38px;
+    }
+    h4 {
+        font-size: 34px;
+    }
+    html,
+    label,
+    input,
+    select,
+    a,
+    li,
+    button,
+    option {
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:899px) {
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 34px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 26px;
+    }
+    html,
+    label,
+    input,
+    select,
+    a,
+    li,
+    button,
+    option {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:319px) {
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    html,
+    label,
+    input,
+    select,
+    a,
+    li,
+    button,
+    option {
+        font-size: 10px;
+    }
+}
+
 /*BUTTONS*/
 
 button {
@@ -655,6 +951,49 @@ button {
     flex-direction: row;
     justify-content: space-between;
 }
+
+
+/*FORMS*/
+
+form.form-lg {
+    width: 100%;
+}
+
+form.form-md {
+    width: 66%;
+}
+
+form.form-sm {
+    width: 50%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.form-group-inline {
+    display: flex;
+    flex-direction: row;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    margin-left: .5rem;
+    transform: scale(1.5);
+    -moz-transform: scale(1.5);
+}
+
 /*FOOTER*/
 
 footer .row:nth-child(1) {
