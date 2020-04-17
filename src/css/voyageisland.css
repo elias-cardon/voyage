@@ -95,6 +95,7 @@ form .col {
 
 /*TYPO*/
 
-h3 {
-    margin-bottom: 1rem;
+.col.text {
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
