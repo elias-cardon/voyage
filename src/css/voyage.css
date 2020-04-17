@@ -1375,3 +1375,20 @@ section.jumbotron video {
 .align-center {
     align-items: center;
 }
+
+
+/*BLOCKQUOTE*/
+
+blockquote {
+    text-align: center;
+}
+
+blockquote::before {
+    content: "\201C";
+    font-size: 2rem;
+}
+
+blockquote::after {
+    content: "\201D";
+    font-size: 2rem;
+}
