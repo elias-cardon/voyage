@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    overflow-y:scroll;
+    overflow-y: scroll;
     overflow-x: hidden;
 }
 
@@ -21,8 +21,7 @@
     flex-direction: column;
 }
 
-.column:nth-child(even) {
-}
+.column:nth-child(even) {}
 
 .column.w-200 {
     width: 200%;
@@ -32,7 +31,7 @@
 /*BACKGROUNDS*/
 
 .bg-photo {
-    background-image: url(../img/pictures/Las_Vegas/empty-road-beside-sand-dunes.jpg);
+    background-image: url(../img/backgrounds/blue_lagoon_island.jpeg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
