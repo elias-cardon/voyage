@@ -22,7 +22,6 @@
 }
 
 .column:nth-child(even) {}
-
 .column.w-200 {
     width: 200%;
 }
@@ -31,7 +30,7 @@
 /*BACKGROUNDS*/
 
 .bg-photo {
-    background-image: url(../img/backgrounds/blue_lagoon_island.jpeg);
+    background-image: url(../img/pictures/las_vegas/back_las_vegas.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
