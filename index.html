@@ -7,6 +7,7 @@
     <meta name="author" content="">
     <meta name="description" content="">
     <title>Voyages</title>
+    <link rel="stylesheet" href="src/css/fa.css">
     <link rel="stylesheet" href="src/css/voyage.css">
     <link rel="stylesheet" href="src/css/index.css">
     <link rel="shortcut icon" type="image/x-icon" href="src/img/icons/iceland_flag.png">
@@ -15,6 +16,7 @@
     <!--OWN SCRIPTS-->
     <script src="src/js/dropdownShow.js"></script>
     <script src="src/js/navScrollToStick.js"></script>
+    <script src="src/js/cardLandingHover.js"></script>
 </head>
 
 <body>
@@ -111,6 +113,54 @@
 
     <main>
 
+        <section class="destination-full bg-landing relative w-100">
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio fugiat error quisquam, facilis explicabo laudantium dignissimos accusantium unde, similique inventore repellat repudiandae. Eveniet exercitationem fugiat odio fuga perspiciatis
+                    inventore quisquam!</p>
+                <div class="row justify-around">
+                    <i class="fab fa-tripadvisor fa-2x"></i>
+                    <i class="fas fa-suitcase-rolling fa-2x"></i>
+                    <i class="far fa-smile-wink fa-2x"></i>
+                </div>
+            </div>
+            <div class="col p-0 align-center">
+                <div class="card-landing zero">
+                    <div class="body">
+                        <img src="src/img/pictures/cards_landing_five.jpg" alt="card-image" class="full">
+                    </div>
+                    <div class="footer"></div>
+                </div>
+                <div class="card-landing">
+                    <div class="body">
+                        <img src="src/img/pictures/cards_landing_four.jpg" alt="card-image" class="full">
+                    </div>
+                    <div class="footer"></div>
+                </div>
+                <div class="card-landing one">
+                    <div class="body">
+                        <img src="src/img/pictures/cards_landing_one.jpg" alt="card-image" class="full">
+                    </div>
+                    <div class="footer"></div>
+                </div>
+                <div class="card-landing two">
+                    <div class="body">
+                        <img src="src/img/pictures/cards_landing_three.jpg" alt="card-image" class="full">
+                    </div>
+                    <div class="footer"></div>
+                </div>
+                <div class="card-landing three">
+                    <div class="body">
+                        <img src="src/img/pictures/cards_landing_two.jpg" alt="card-image" class="full">
+                    </div>
+                    <div class="footer"></div>
+                </div>
+
+            </div>
+
+            <a href="" class="btn-lg mustard absolute-bottom my-1">Nouveautés</a>
+
+        </section>
+
 
     </main>
 
@@ -184,7 +234,7 @@
 
         <div class="row brand">
             <div class="col">
-                <p class="brand">Mybrand&copy; 2020, Inc. All rights reserved.</p>
+                <p class="brand">Voyage.fr&copy; 2020, Inc. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -193,6 +243,7 @@
         window.load = dropdownShowCOntent();
         navScrollToStick();
         dropupShowCOntent();
+        cardLandingHover();
     </script>
 
 </body>
