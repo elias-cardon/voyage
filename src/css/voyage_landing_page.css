@@ -26,11 +26,8 @@ section.destination-full {
     position: absolute;
     background-color: #FFF;
     transform-origin: bottom left;
-    -webkit-box-shadow: 0px 0px 47px -20px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px 0px 47px -20px rgba(0, 0, 0, 1);
-    box-shadow: 0px 0px 47px -20px rgba(0, 0, 0, 1);
     overflow: hidden;
-    transition: transform 1s ease-in-out;
+    transition: all 1s ease-in-out;
     cursor: pointer;
 }
 
@@ -60,4 +57,45 @@ section.destination-full {
 .card-landing .body img.full {
     height: 100%;
     width: 100%;
+}
+
+.circle {
+    height: 20rem;
+    width: 20rem;
+    background-color: #fff;
+}
+
+
+/*Z INDEX utilities*/
+
+.z-0 {
+    z-index: 0;
+}
+
+.z-1 {
+    z-index: 1;
+}
+
+.z-2 {
+    z-index: 2;
+}
+
+.z-3 {
+    z-index: 3;
+}
+
+.z-4 {
+    z-index: 4;
+}
+
+.z-5 {
+    z-index: 5;
+}
+
+.z-6 {
+    z-index: 6;
+}
+
+.z-100 {
+    z-index: 100;
 }
