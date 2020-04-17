@@ -367,31 +367,6 @@ nav li:hover {
 
 /*main*/
 /*carousel*/
-ul {
-    margin: 0 0 1.5rem;
-    padding: 0;
-}
-
-li {
-    display: inline-block;
-}
-
-img {
-    height: auto;
-    margin-bottom: .5rem;
-    max-width: calc(100% + 2rem);
-    position: relative;
-}
-
-p {
-    margin: 0 0 .5rem;
-}
-
-main {
-    padding: 1rem 2rem;
-    margin: auto;
-}
-
 
 .card {
     border: 1px solid #bac6d3;
