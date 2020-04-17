@@ -10,6 +10,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    overflow-y:scroll;
+    overflow-x: hidden;
 }
 
 .container .column {
@@ -20,7 +22,6 @@
 }
 
 .column:nth-child(even) {
-    background-color: turquoise;
 }
 
 .column.w-200 {
@@ -31,7 +32,7 @@
 /*BACKGROUNDS*/
 
 .bg-photo {
-    background-image: url(../img/backgrounds/blue_lagoon_island.jpeg);
+    background-image: url(../img/pictures/Las_Vegas/empty-road-beside-sand-dunes.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
