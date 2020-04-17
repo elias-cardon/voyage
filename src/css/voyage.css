@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Varela&display=swap');
 html {
     /*COLOR SCHEME*/
     --regent-saint-blue: #A2C2DA;
@@ -41,7 +41,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'Cinzel', serif;
+    font-family: 'Varela', sans-serif;
 }
 
 p,
@@ -259,6 +259,7 @@ option {
 
 nav {
     position: absolute;
+    bottom: 0;
     z-index: 30000;
     display: flex;
     justify-content: space-between;
@@ -524,7 +525,10 @@ button {
 
 .dropdown-lg,
 .dropdown-md,
-.dropdown-sm {
+.dropdown-sm,
+.dropup-lg,
+.dropup-md,
+.dropup-sm {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -535,27 +539,42 @@ button {
 .dropdown-lg p,
 .dropdown-lg ul,
 .dropdown-lg li,
-.dropdown-lg a {
+.dropdown-lg a,
+.dropup-lg p,
+.dropup-lg ul,
+.dropup-lg li,
+.dropup-lg a {
     font-size: 1rem;
 }
 
 .dropdown-md p,
 .dropdown-md ul,
 .dropdown-md li,
-.dropdown-md a {
+.dropdown-md a,
+.dropup-md p,
+.dropup-md ul,
+.dropup-md li,
+.dropup-md a {
     font-size: .75rem;
 }
 
 .dropdown-sm p,
 .dropdown-sm ul,
 .dropdown-sm li,
-.dropdown-sm a {
+.dropdown-sm a,
+.dropup-sm p,
+.dropup-sm ul,
+.dropup-sm li,
+.dropup-sm a {
     font-size: .5rem;
 }
 
 .dropdown-lg p,
 .dropdown-md p,
-.dropdown-sm p {
+.dropdown-sm p,
+.dropup-lg p,
+.dropup-md p,
+.dropup-sm p {
     margin-left: 1rem;
     position: relative;
     z-index: 500;
@@ -574,6 +593,23 @@ button {
     background-color: #FFF;
     cursor: pointer;
 }
+
+.dropup-lg img,
+.dropup-md img,
+.dropup-sm img {
+    border: #000 1px solid;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: rotate(-90deg);
+    margin-left: 1rem;
+    background-color: #FFF;
+    cursor: pointer;
+}
+
+
+/*DROPDOWNS*/
 
 .dropdown-lg img {
     height: 2.5rem;
@@ -608,9 +644,48 @@ button {
     width: 12rem;
 }
 
+
+/*DROPUPS*/
+
+.dropup-lg img {
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: .75rem;
+}
+
+.dropup-md img {
+    height: 2rem;
+    width: 2rem;
+    padding: .5rem;
+}
+
+.dropup-sm img {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: .25rem;
+}
+
+.dropup-sm {
+    height: 1.5rem;
+    width: 6rem;
+}
+
+.dropup-md {
+    height: 2rem;
+    width: 9rem;
+}
+
+.dropup-lg {
+    height: 2.5rem;
+    width: 12rem;
+}
+
 .dropdown-sm.regent-saint-blue,
 .dropdown-md.regent-saint-blue,
-.dropdown-lg.regent-saint-blue {
+.dropdown-lg.regent-saint-blue,
+.dropup-sm.regent-saint-blue,
+.dropup-md.regent-saint-blue,
+.dropup-lg.regent-saint-blue {
     background-color: var(--regent-saint-blue);
     transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease-in-out;
@@ -618,14 +693,20 @@ button {
 
 .dropdown-sm.regent-saint-blue:hover,
 .dropdown-md.regent-saint-blue:hover,
-.dropdown-lg.regent-saint-blue:hover {
+.dropdown-lg.regent-saint-blue:hover,
+.dropup-sm.regent-saint-blue:hover,
+.dropup-md.regent-saint-blue:hover,
+.dropup-lg.regent-saint-blue:hover {
     box-shadow: inset 10rem 0 0 var(--regent-saint-blue-light);
     -webkit-box-shadow: inset 10rem 0 0 var(--regent-saint-blue-light);
 }
 
 .dropdown-sm.mustard,
 .dropdown-md.mustard,
-.dropdown-lg.mustard {
+.dropdown-lg.mustard,
+.dropup-sm.mustard,
+.dropup-md.mustard,
+.dropup-lg.mustard {
     background-color: var(--mustard);
     transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease-in-out;
@@ -633,14 +714,20 @@ button {
 
 .dropdown-sm.mustard:hover,
 .dropdown-md.mustard:hover,
-.dropdown-lg.mustard:hover {
+.dropdown-lg.mustard:hover,
+.dropup-sm.mustard:hover,
+.dropup-md.mustard:hover,
+.dropup-lg.mustard:hover {
     box-shadow: inset 10rem 0 0 var(--mustard-light);
     -webkit-box-shadow: inset 10rem 0 0 var(--mustard-light);
 }
 
 .dropdown-sm.aquamarine,
 .dropdown-md.aquamarine,
-.dropdown-lg.aquamarine {
+.dropdown-lg.aquamarine,
+.dropup-sm.aquamarine,
+.dropup-md.aquamarine,
+.dropup-lg.aquamarine {
     background-color: var(--aquamarine);
     transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease-in-out;
@@ -648,7 +735,10 @@ button {
 
 .dropdown-sm.aquamarine:hover,
 .dropdown-md.aquamarine:hover,
-.dropdown-lg.aquamarine:hover {
+.dropdown-lg.aquamarine:hover,
+.dropup-sm.aquamarine:hover,
+.dropup-md.aquamarine:hover,
+.dropup-lg.aquamarine:hover {
     box-shadow: inset 10rem 0 0 var(--aquamarine-light);
     -webkit-box-shadow: inset 10rem 0 0 var(--aquamarine-light);
 }
@@ -658,17 +748,24 @@ button {
 
 .dropdown-lg img:hover,
 .dropdown-md img:hover,
-.dropdown-sm img:hover {
+.dropdown-sm img:hover,
+.dropup-lg img:hover,
+.dropup-md img:hover,
+.dropup-sm img:hover {
     z-index: 5000;
 }
 
-.dropdown-content:hover+.img-arrow {
+.dropdown-content:hover+.img-arrow,
+.dropup-content:hover+.img-arrow {
     z-index: 5000;
 }
 
 .dropdown-lg img:hover+.dropdown-content,
 .dropdown-md img:hover+.dropdown-content,
-.dropdown-sm img:hover+.dropdown-content {
+.dropdown-sm img:hover+.dropdown-content,
+.dropup-lg img:hover+.dropup-content,
+.dropup-md img:hover+.dropup-content,
+.dropup-sm img:hover+.dropup-content {
     display: flex;
     position: absolute;
     background-color: #FFF;
@@ -677,22 +774,57 @@ button {
     width: 100%;
 }
 
+
+/*DROPDOWN*/
+
 .dropdown-lg img:hover+.dropdown-content {
     top: 2.5rem
 }
+
+
+/*DROPUP*/
+
+.dropup-lg img:hover+.dropup-content {
+    bottom: 2.5rem
+}
+
+
+/*DROPDOWN*/
 
 .dropdown-md img:hover+.dropdown-content {
     top: 2rem
 }
 
+
+/*DROPUP*/
+
+.dropup-md img:hover+.dropup-content {
+    bottom: 2rem
+}
+
+
+/*DROPDOWN*/
+
 .dropdown-sm img:hover+.dropdown-content {
     top: 1.5rem
 }
 
+
+/*DROPUPS*/
+
+.dropup-sm img:hover+.dropup-content {
+    bottom: 1.5rem
+}
+
 .dropdown-content,
-.dropdown-content-js {
+.dropdown-content-js,
+.dropup-content,
+.dropup-content-js {
     display: none;
 }
+
+
+/*DROPDOWN*/
 
 .dropdown-lg .dropdown-content-js {
     display: none;
@@ -704,6 +836,22 @@ button {
     width: 100%;
 }
 
+
+/*DROPUP*/
+
+.dropup-lg .dropup-content-js {
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    bottom: 2.5rem;
+    z-index: 1000;
+    padding: .5rem;
+    width: 100%;
+}
+
+
+/*DROPDOWN*/
+
 .dropdown-md .dropdown-content-js {
     display: none;
     position: absolute;
@@ -713,6 +861,22 @@ button {
     padding: .5rem;
     width: 100%;
 }
+
+
+/*DROPUP*/
+
+.dropup-md .dropup-content-js {
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    bottom: 2rem;
+    z-index: 1000;
+    padding: .5rem;
+    width: 100%;
+}
+
+
+/*DROPDOWN*/
 
 .dropdown-sm .dropdown-content-js {
     display: none;
@@ -724,7 +888,36 @@ button {
     width: 100%;
 }
 
+
+/*DROPUP*/
+
+.dropup-sm .dropup-content-js {
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    bottom: 1.5rem;
+    z-index: 1000;
+    padding: .5rem;
+    width: 100%;
+}
+
+
+/*DROPDOWN*/
+
 .dropdown-content:hover {
+    display: flex;
+    position: absolute;
+    background-color: #FFF;
+    top: 2rem;
+    z-index: 1000;
+    padding: 1rem;
+    width: 100%;
+}
+
+
+/*DROPUP*/
+
+.dropup-content:hover {
     display: flex;
     position: absolute;
     background-color: #FFF;
@@ -856,7 +1049,6 @@ footer p .brand {
 section.jumbotron {
     height: 100vh;
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: nowrap;
 }
 
@@ -866,6 +1058,19 @@ section.jumbotron video {
     width: 100%;
     position: relative;
     z-index: 0;
+}
+
+.jumbotron img.one-third {
+    height: 50%;
+    width: 33%;
+}
+
+.jumbotron div.one-third-container {
+    height: 100%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .jumbotron h1.title {
@@ -975,7 +1180,7 @@ section.jumbotron video {
 }
 
 .bg-overlay-white-light {
-    background-color: rgba(255, 255, 255, 0.33);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .bg-overlay-white-medium {
@@ -1086,6 +1291,24 @@ section.jumbotron video {
     position: absolute;
 }
 
+.bottom-none {
+    bottom: unset;
+}
+
 .z-100 {
     z-index: 100;
+}
+
+
+/*BACKGROUNDS COLORS UTILITIES*/
+
+.bg-white {
+    background-color: #FFF;
+}
+
+
+/*DISPLAY UTILITIES*/
+
+.d-none {
+    display: none;
 }

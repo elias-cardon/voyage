@@ -1,25 +1,5 @@
 /*GENERAL MARKUP DESIGN*/
 
-html {
-    /*TYPO SIZE BASE 8PX*/
-    --base-font-size: 8px;
-    /*COLORS SHEME*/
-    --var-black: #11151c;
-    --var-white: #FFFFFF;
-    --var-dark: #515459;
-    --var-dark-light: #bebfc1;
-    --var-primary: #F05537;
-    --var-primary-light: #f6a291;
-    --var-secondary: #1f487e;
-    --var-secondary-light: #708aac;
-    --var-success: #018e42;
-    --var-success-light: #5db786;
-    --var-warning: #f7d002;
-    --var-warning-light: #fae575;
-    --var-danger: #bf1a2f;
-    --var-danger-light: #d05867;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -80,53 +60,6 @@ section.destination-full {
 }
 
 
-<<<<<<< HEAD:src/css/voyageisland.css
-=======
-/*JUMBOTRON */
-
-section.jumbotron {
-    height: 100vh;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-}
-
-section.jumbotron video {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    z-index: 0;
-}
-
-.jumbotron h1.title {
-    font-size: 4rem;
-}
-
-.jumbotron h2.title {
-    font-size: 3rem;
-}
-
-
-/*LAYOUT UTLITIES*/
-
-.col {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-.col img.full {
-    height: 100%;
-    width: 100%;
-}
-
-
->>>>>>> e40926df5fa0f9e0ac69ba1ce939f1f3b9742b9b:src/styles/voyageisland.css
 /*BACKGROUNDS*/
 
 .bg-island-port,
@@ -147,7 +80,6 @@ section.jumbotron video {
 }
 
 
-<<<<<<< HEAD:src/css/voyageisland.css
 /*FORMS*/
 
 form {
@@ -183,111 +115,4 @@ form .col {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-=======
-/*OVERLAYS*/
-
-.bg-overlay-white-light,
-.bg-overlay-white-medium,
-.bg-overlay-white-high,
-.bg-overlay-dark-light,
-.bg-overlay-dark-medium,
-.bg-overlay-dark-high {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.bg-overlay-white-light,
-.bg-overlay-white-medium,
-.bg-overlay-white-high {
-    color: #000;
-}
-
-.bg-overlay-dark-light,
-.bg-overlay-dark-medium,
-.bg-overlay-dark-high {
-    color: #FFF
-}
-
-.bg-overlay-white-light {
-    background-color: rgba(255, 255, 255, 0.33);
-}
-
-.bg-overlay-white-medium {
-    background-color: rgba(255, 255, 255, 0.66);
-}
-
-.bg-overlay-white-high {
-    background-color: rgba(255, 255, 255, 0.90);
-}
-
-.bg-overlay-dark-light {
-    background-color: rgba(0, 0, 0, 0.33);
-}
-
-.bg-overlay-dark-medium {
-    background-color: rgba(0, 0, 0, 0.66);
-}
-
-.bg-overlay-dark-high {
-    background-color: rgba(0, 0, 0, 0.90);
-}
-
-
-/*ABSOLUTE POSITIONNING*/
-
-.absolute {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 500;
-}
-
-
-/*SIZING UTILITIES*/
-
-.w-33 {
-    width: 33%;
-}
-
-.w-50 {
-    width: 50%;
-}
-
-.w-66 {
-    width: 66%;
-}
-
-.w-100 {
-    width: 100%;
-}
-
-.w-133 {
-    width: 133%;
-}
-
-.w-150 {
-    width: 150%;
-}
-
-.w-166 {
-    width: 166%;
-}
-
-.w-200 {
-    width: 200%;
-}
-
-
-/*MARGIN PADDING UTILITIES*/
-
-.ml-2 {
-    margin-left: 2rem;
-}
-
-.mr-2 {
-    margin-right: 2rem;
->>>>>>> e40926df5fa0f9e0ac69ba1ce939f1f3b9742b9b:src/styles/voyageisland.css
 }

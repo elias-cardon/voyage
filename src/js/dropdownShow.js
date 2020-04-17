@@ -12,3 +12,18 @@ function dropdownShowCOntent() {
         }
     })
 };
+
+function dropupShowCOntent() {
+    $('.dropup').find('img').click(function() {
+
+        if ($(this).siblings('.dropup-content-js').css('display') === 'none') {
+            $(this).siblings('.dropup-content-js').css({
+                'display': 'flex'
+            });
+        } else {
+            $(this).siblings('.dropup-content-js').css({
+                'display': 'none'
+            });
+        }
+    })
+};
