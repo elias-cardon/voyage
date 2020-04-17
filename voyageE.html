@@ -16,42 +16,12 @@
 
 <body>
     <!--HEADER-->
-    <header>
-        <!--NAVBAR -->
-        <nav>
-            <div class="dropdown dropdown-md regent-saint-blue">
-                <p>Continent</p>
-                <img src="src/img/icons/arrow.png">
-                <div class="dropdown-content-js">
-                    <ul>
-                        <li>lorem</li>
-                        <li>dolor</li>
-                        <li>Ipsum</li>
-                    </ul>
-                </div>
-            </div>
-            </div>
-
-            <img id="plane_icon_header" src="src/img/icons/plane.png" alt="a picture of a plane">
-
-            <div class="dropdown dropdown-md regent-saint-blue">
-                <p>Personne</p>
-                <img src="src/img/icons/arrow.png">
-                <div class="dropdown-content-js">
-                    <ul>
-                        <li>lorem</li>
-                        <li>dolor</li>
-                        <li>Ipsum</li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!--NAVBAR-->
+    <header class="relative">
         <!--JUMBOTRON VIDEO-->
         <section class="jumbotron">
-            <div class="bg-overlay-white-light w-100 absolute">
+            <div class="bg-overlay-dark-light w-100 absolute">
                 <div class="col p-0">
-                    <ul class="page-menu-light">
+                    <ul class="page-menu">
                         <li>
                             <a href="">Lorem</a>
                         </li>
@@ -73,10 +43,62 @@
                 </div>
             </div>
             <video controls muted autoplay loop>
-            <source src="src/video/Tunisie.mp4">
-        </video>
-
+                <source src="src/video/Tunisie.mp4">
+            </video>
         </section>
+
+        <!--NAVBAR -->
+        <nav>
+            <div class="dropdown dropdown-md regent-saint-blue d-none">
+                <p>Continent</p>
+                <img src="src/img/icons/arrow.png">
+                <div class="dropdown-content-js">
+                    <ul>
+                        <li>lorem</li>
+                        <li>dolor</li>
+                        <li>Ipsum</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropup dropup-md regent-saint-blue">
+                <p>Continent</p>
+                <img src="src/img/icons/arrow.png">
+                <div class="dropup-content-js">
+                    <ul>
+                        <li>lorem</li>
+                        <li>dolor</li>
+                        <li>Ipsum</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+
+            <img id="plane_icon_header" src="src/img/icons/plane.png" alt="a picture of a plane">
+
+            <div class="dropdown dropdown-md regent-saint-blue d-none">
+                <p>Personne</p>
+                <img src="src/img/icons/arrow.png">
+                <div class="dropdown-content-js">
+                    <ul>
+                        <li>lorem</li>
+                        <li>dolor</li>
+                        <li>Ipsum</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropup dropup-md regent-saint-blue">
+                <p>Personne</p>
+                <img src="src/img/icons/arrow.png">
+                <div class="dropup-content-js">
+                    <ul>
+                        <li>lorem</li>
+                        <li>dolor</li>
+                        <li>Ipsum</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--NAVBAR-->
 
     </header>
     <!--HEADER END-->
@@ -258,7 +280,8 @@
                     des jarres, bols, vases et pots en terre cuite vernissée de couleur jaune et verte, rehaussée de motifs brun foncé. Depuis le début du 20e siècle, les potiers de Nabeul se sont spécialisés dans les carreaux de faïence polychrome, reprenant
                     les décors des palais et monuments anciens de Tunisie. Ils proposent aujourd’hui toute une gamme de produits, depuis les panneaux de céramique de style ottoman jusqu’à la vaisselle design, en passant par les vases à fond blanc luisant
                     décorés de couleurs éclatantes. On peut aussi acheter des carreaux de faïence à motifs traditionnels produits par les usines implantées à Nabeul ; une manière économique et originale de personnaliser son intérieur au retour des vacances
-                    !</p>
+                    !
+                </p>
             </section>
             <div class="table_center_main">
                 <table>
@@ -591,8 +614,10 @@
 
 
     </footer>
+
     <script>
         window.load = dropdownShowCOntent();
+        dropupShowCOntent();
         navScrollToStick();
     </script>
 </body>

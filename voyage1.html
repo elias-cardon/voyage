@@ -19,40 +19,10 @@
 
 <body>
     <!--HEADER-->
-    <header>
-        <!--NAVBAR -->
-        <nav>
-            <div class="dropdown dropdown-md regent-saint-blue">
-                <p>Continent</p>
-                <img src="src/img/icons/arrow.png">
-                <div class="dropdown-content-js">
-                    <ul>
-                        <li>lorem</li>
-                        <li>dolor</li>
-                        <li>Ipsum</li>
-                    </ul>
-                </div>
-            </div>
-            </div>
-
-            <img id="plane_icon_header" src="src/img/icons/plane.png" alt="a picture of a plane">
-
-            <div class="dropdown dropdown-md regent-saint-blue">
-                <p>Personne</p>
-                <img src="src/img/icons/arrow.png">
-                <div class="dropdown-content-js">
-                    <ul>
-                        <li>lorem</li>
-                        <li>dolor</li>
-                        <li>Ipsum</li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!--NAVBAR-->
+    <header class="relative">
         <!--JUMBOTRON VIDEO-->
         <section class="jumbotron">
-            <div class="bg-overlay-dark-medium w-100 absolute">
+            <div class="bg-overlay-dark-light w-100 absolute">
                 <div class="col p-0">
                     <ul class="page-menu">
                         <li>
@@ -76,9 +46,62 @@
                 </div>
             </div>
             <video controls muted autoplay loop>
-                <source src="src/videos/island.mp4">
+                <source src="src/video/island.mp4">
             </video>
         </section>
+
+        <!--NAVBAR -->
+        <nav>
+            <div class="dropdown dropdown-md regent-saint-blue d-none">
+                <p>Continent</p>
+                <img src="src/img/icons/arrow.png">
+                <div class="dropdown-content-js">
+                    <ul>
+                        <li>lorem</li>
+                        <li>dolor</li>
+                        <li>Ipsum</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropup dropup-md regent-saint-blue">
+                <p>Continent</p>
+                <img src="src/img/icons/arrow.png">
+                <div class="dropup-content-js">
+                    <ul>
+                        <li>lorem</li>
+                        <li>dolor</li>
+                        <li>Ipsum</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+
+            <img id="plane_icon_header" src="src/img/icons/plane.png" alt="a picture of a plane">
+
+            <div class="dropdown dropdown-md regent-saint-blue d-none">
+                <p>Personne</p>
+                <img src="src/img/icons/arrow.png">
+                <div class="dropdown-content-js">
+                    <ul>
+                        <li>lorem</li>
+                        <li>dolor</li>
+                        <li>Ipsum</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropup dropup-md regent-saint-blue">
+                <p>Personne</p>
+                <img src="src/img/icons/arrow.png">
+                <div class="dropup-content-js">
+                    <ul>
+                        <li>lorem</li>
+                        <li>dolor</li>
+                        <li>Ipsum</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--NAVBAR-->
 
     </header>
     <!--HEADER END-->
@@ -245,6 +268,7 @@
 
     <script>
         window.load = dropdownShowCOntent();
+        dropupShowCOntent();
         navScrollToStick();
     </script>
 
