@@ -5,6 +5,9 @@ function cardLandingHover() {
         $('.card-landing.two').css({ 'transform': 'rotate(-60deg)' });
         $('.card-landing.three').css({ 'transform': 'rotate(-100deg)' });
         $('.card-landing.four').css({ 'transform': 'rotate(-120deg)' });
+        $(this).addClass('z-100 hover-scale').css({
+            'transform': 'scale(1.2)'
+        });
     });
     $('.card-landing').mouseleave(function() {
         $('.card-landing.zero').css({ 'transform': 'none' });
@@ -12,5 +15,6 @@ function cardLandingHover() {
         $('.card-landing.two').css({ 'transform': 'none' });
         $('.card-landing.three').css({ 'transform': 'none' });
         $('.card-landing.four').css({ 'transform': 'none' });
+        $(this).removeClass('z-100');
     });
-}
+};

@@ -69,6 +69,7 @@ option {
 
 /*DESTINATION */
 
+section.destination-quarter,
 section.destination-half,
 section.destination-two-third,
 section.destination-full {
@@ -77,12 +78,20 @@ section.destination-full {
     flex-wrap: nowrap;
 }
 
+section.destination-quarter {
+    height: 25vh;
+}
+
 section.destination-half {
     height: 50vh;
 }
 
 section.destination-two-third {
     height: 66vh;
+}
+
+section.destination-three-quarter {
+    height: 75vh;
 }
 
 section.destination-full {
@@ -1221,7 +1230,7 @@ section.jumbotron video {
 }
 
 .bg-overlay-dark-light {
-    background-color: rgba(0, 0, 0, 0.33);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .bg-overlay-dark-medium {
@@ -1392,3 +1401,6 @@ blockquote::after {
     content: "\201D";
     font-size: 2rem;
 }
+
+
+/*HOVER EFFECTS*/
