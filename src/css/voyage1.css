@@ -99,3 +99,8 @@ form .col {
     overflow-x: hidden;
     overflow-y: scroll;
 }
+
+h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
