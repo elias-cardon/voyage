@@ -1502,33 +1502,14 @@ blockquote::after {
 
 /*MEDIA HIDDEN CONTENT*/
 
-@media screen and (min-width: 900px) and (max-width:1199px) {}
-
-@media screen and (min-width:320px) and (max-width:899px) {
+@media screen and (max-width:1300px) {
     .col.d-sm-xs-none {
         display: none;
     }
     .col.text {
-        min-height: 100vh;
-    }
-    .destination-full {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        position: relative;
-    }
-    .absolute-sm-xs {
-        position: absolute;
-    }
-}
-
-@media screen and (max-width:319px) {
-    .col.d-sm-xs-none {
-        display: none;
-    }
-    .col.text {
-        min-height: 100vh;
+        min-height: 50vh;
+        justify-content: flex-start;
+        padding: 1rem;
     }
     .destination-full {
         display: flex;
