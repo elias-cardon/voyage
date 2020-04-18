@@ -1,14 +1,7 @@
-header {
-    height: 10vh;
-    background-color: aqua;
-}
-
-
 /* MAIN */
 
-section {
-    margin: 60px;
-    border: 0px solid black;
+main {
+    padding: 2rem;
 }
 
 
@@ -239,7 +232,7 @@ footer {
     }
 }
 
-@media screen and (min-width:900px) and (max-width:1199px) {
+@media screen and (max-width:1199px) {
     .section-5.quand-y-aller {
         display: flex;
         flex-direction: column;
@@ -266,74 +259,6 @@ footer {
         height: 430px;
         width: 500px;
         transition: 0.3s;
-    }
-    .bg-cover-welcome-hot {
-        background-image: url(../img/pictures/las_vegas/empty-road-hot.jpg);
-        background-size: cover;
-        background-attachment: scroll;
-        margin-top: 50px;
-        height: 100vh;
-        width: 100%;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-        border-radius: 3px;
-        overflow: hidden;
-    }
-}
-
-@media screen and (min-width:320px) and (max-width:899px) {
-    .section-5.quand-y-aller {
-        display: flex;
-        flex-direction: column;
-    }
-    .page-ajustement-3,
-    .bg-cover-welcome-hot {
-        min-width: 100%;
-    }
-    h1,
-    h2,
-    .section-5 h3 {
-        text-align: center;
-    }
-    .block-principal {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .block-principal div {
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-        border-radius: 3px;
-        overflow: hidden;
-        margin: 30px;
-        height: 430px;
-        width: 500px;
-        transition: 0.3s;
-    }
-    .bg-cover-welcome-hot {
-        background-image: url(../img/pictures/las_vegas/empty-road-hot.jpg);
-        background-size: cover;
-        background-attachment: scroll;
-        margin-top: 50px;
-        height: 100vh;
-        width: 100%;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-        border-radius: 3px;
-        overflow: hidden;
-    }
-}
-
-@media screen and (max-width:319px) {
-    .section-5.quand-y-aller {
-        display: flex;
-        flex-direction: column;
-    }
-    .page-ajustement-3,
-    .bg-cover-welcome-hot {
-        min-width: 100%;
-    }
-    h1,
-    h2,
-    .section-5 h3 {
-        text-align: center;
     }
     .bg-cover-welcome-hot {
         background-image: url(../img/pictures/las_vegas/empty-road-hot.jpg);
