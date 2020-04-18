@@ -1198,6 +1198,11 @@ section.jumbotron video {
     width: 100%;
 }
 
+img.full {
+    height: 100%;
+    width: 100%;
+}
+
 .row {
     flex-direction: row;
 }
