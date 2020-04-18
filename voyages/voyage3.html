@@ -468,61 +468,79 @@
             </div>
         </div>
         <div class="Avis">
-            <h2 class="titre_form">Votre avis</h2>
-            <form class="form-md" action="" target="_self" method="POST">
-                <div class="form-group">
-                    <label for="user_first_name">Renseigner votre nom</label>
-                    <input type="text" id="user_first_name" name="user_first_name" placeholder="Dupont" required>
-                </div>
-                <div class="form-group">
-                    <label for="user_last_name">Renseigner votre prénom</label>
-                    <input type="text" id="user_last_name" name="user_last_name" placeholder="Jean" required>
-                </div>
-                <div class="row">
-                    Avez-vous des Enfants ?
-                    <div class="form-group-inline">
-                        <label for="example">Oui</label>
-                        <input type="radio" name="example">
+            <h2 class="titre_form">Réserver un voyage</h2>
+            <fom class="form-lg row" action="" target="_self" id="user_book_trip" method="POST">
+                <div class="col p-0 w-66 relative z-100">
+                    <div class="form-group w-90">
+                        <label for="user_first_name">Renseigner votre nom</label>
+                        <input type="text" id="user_first_name" name="user_first_name" placeholder="Dupont *" required>
                     </div>
-                    <div class="form-group-inline">
-                        <label for="example">Non</label>
-                        <input type="radio" name="example">
+                    <div class="form-group w-90">
+                        <label for="user_last_name">Renseigner votre prénom</label>
+                        <input type="text" id="user_last_name" name="user_last_name" placeholder="Jack *" required>
+                    </div>
+                    <div class="form-group w-90">
+                        <label for="user_departure_date">Date de départ</label>
+                        <input type="date" id="user_departure_date" name="user_departure_date">
+                    </div>
+                    <div class="form-group w-90">
+                        <label for="user_return_date">Date de retour</label>
+                        <input type="date" id="user_return_date" name="user_return_date">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="">Si oui, combien ?</label>
-                    <select name="" id="">
+                <div class="col p-0 w-66 relative z-100">
+                    <div class="form-group w-90">
+                        <label for="user_boarding_city">Selectionner la ville de départ</label>
+                        <select name="user_boarding_city" id="user_boarding_city">
+                            <option value="">Marseille</option>
+                            <option value="">Paris</option>
+                            <option value="">Lyon</option>
+                            <option value="">Bordeaux</option>
+                            <option value="">Toulouse</option>
+                        </select>
+                    </div>
+                    <div class="form-group w-90">
+                        <label for="user_person_number">Nombre de personne</label>
+                        <select name="user_person_number" id="user_person_number">
                             <option value="">1</option>
                             <option value="">2</option>
                             <option value="">3</option>
                             <option value="">4</option>
-                            <option value="">5+</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10 ou plus</option>
                         </select>
+                    </div>
+                    <div class="row w-90 mb-half-point">
+                        <div class="form-group-inline">
+                            <label for="choiceType">Nourriture</label>
+                            <input type="checkbox" name="" id="choiceType">
+                        </div>
+                        <div class="form-group-inline">
+                            <label for="choiceType">Détente</label>
+                            <input type="checkbox" name="" id="choiceType">
+                        </div>
+                        <div class="form-group-inline">
+                            <label for="choiceType">Luxe</label>
+                            <input type="checkbox" name="" id="choiceType">
+                        </div>
+                    </div>
+                    <div class="row w-90 mb-half-point">
+                        <div class="form-group-inline">
+                            <label for="choiceType">Culture</label>
+                            <input type="checkbox" name="" id="choiceType">
+                        </div>
+                        <div class="form-group-inline">
+                            <label for="choiceType">Aventure</label>
+                            <input type="checkbox" name="" id="choiceType">
+                        </div>
+                    </div>
+
+                    <button type="submit" form="user_book_trip" class="btn-lg regent-saint-blue">Valider</button>
                 </div>
-                <div class="form-group">
-                    <label for="">A quelle période souhaitez-vous allez en Tunisie ?</label>
-                    <input type="date">
-                </div>
-                <div class="row">
-                    Que cherchez-vous lors de vos voyages ?
-                    <div class="form-group-inline">
-                        <label for="choiceType">Détente</label>
-                        <input type="checkbox" name="" id="choiceType">
-                    </div>
-                    <div class="form-group-inline">
-                        <label for="choiceType">Nouveaux horizons</label>
-                        <input type="checkbox" name="" id="choiceType">
-                    </div>
-                    <div class="form-group-inline">
-                        <label for="choiceType">Aventures</label>
-                        <input type="checkbox" name="" id="choiceType">
-                    </div>
-                    <div class="form-group-inline">
-                        <label for="choiceType">Sport</label>
-                        <input type="checkbox" name="" id="choiceType">
-                    </div>
-                </div>
-                <button type="submit" class="btn-md regent-saint-blue"><a href="#ancre_F">Valider</a></button>
             </form>
         </div>
     </main>
