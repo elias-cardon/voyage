@@ -24,6 +24,12 @@ function cardLandingHover() {
         $('.card-landing.one').css({ 'transform': 'none' });
         $('.card-landing.two').css({ 'transform': 'none' });
         $('.card-landing.three').css({ 'transform': 'none' });
-    })
+        $('.card-landing').find('.pushpin').addClass('d-none');
+    });
+
+    $('.card-landing').click(function() {
+        $('.card-landing').find('.pushpin').addClass('d-none');
+        $(this).find('.pushpin').removeClass('d-none');
+    });
 
 };
