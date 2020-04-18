@@ -177,6 +177,17 @@ footer{
     border-radius: 3px;
     overflow: hidden;
 }
+@media screen and (max-width:900px){
+    .section-5.quand-y-aller{
+        flex-direction: column;
+    }
+    .page-ajustement-3, .bg-cover-welcome-hot{
+        min-width: 100%;
+    }
+    h1, h2, h3{
+        text-align: center;
+    }
+}
 /* SECTION 6 */
 
 .block-principal{
