@@ -1,0 +1,155 @@
+.page-menu li {
+    background-color: var(--regent-saint-blue-overlay-medium);
+}
+
+.bg-landing {
+    background: var(--regent-saint-blue);
+    background: radial-gradient(circle, #FFF 0%, var(--regent-saint-blue) 100%);
+}
+
+section.destination-full {
+    margin: 0;
+    padding: 0;
+}
+
+.destination-full .row {
+    justify-content: end;
+    padding: 2rem;
+}
+
+
+/*CARDS PAGE SPECIFIC*/
+
+.card-landing {
+    height: 15rem;
+    width: 20rem;
+    position: absolute;
+    background-color: #FFF;
+    transform-origin: bottom left;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+.card-landing a {
+    color: #000;
+}
+
+.card-landing .body,
+.card-landing .footer {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-landing .body {
+    height: 90%;
+    background-color: #FFF;
+}
+
+.card-landing .footer {
+    height: 10%;
+}
+
+.card-landing .body img.full {
+    height: 100%;
+    width: 100%;
+}
+
+.circle {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--regent-saint-blue);
+    padding: .5rem;
+    position: absolute;
+    top: -2.5rem;
+    right: -0.5rem;
+}
+
+.news-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.news {
+    height: 4rem;
+    width: 3rem;
+}
+
+.card-landing img.pushpin {
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    bottom: .75rem;
+    right: -1.5rem;
+    transform: rotate(-5deg);
+    transform-origin: bottom left;
+    animation-name: bounce;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    50% {
+        transform: rotate(-90deg);
+    }
+}
+
+
+/*Z INDEX utilities*/
+
+.z-0 {
+    z-index: 0;
+}
+
+.z-1 {
+    z-index: 1;
+}
+
+.z-2 {
+    z-index: 2;
+}
+
+.z-3 {
+    z-index: 3;
+}
+
+.z-4 {
+    z-index: 4;
+}
+
+.z-5 {
+    z-index: 5;
+}
+
+.z-6 {
+    z-index: 6;
+}
+
+.z-100 {
+    z-index: 100;
+}
+
+
+/*BACKGROUNDS */
+
+.bg-voyage {
+    background-image: url(../img/backgrounds/background_voyage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}

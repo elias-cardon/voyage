@@ -11,7 +11,14 @@ function navScrollToStick() {
             });
             $('div.dropup').removeClass('d-none');
             $('div.dropdown').addClass('d-none');
-
+            $('nav').css({
+                'background-color': 'unset'
+            });
+            if ($('nav').find('img#plane_icon_header').length > 0) {
+                $('nav').find('img#plane_icon_header').attr('src', '../src/img/icons/plane_light.png');
+            } else {
+                $('nav').find('img#plane_icon_header_landing').attr('src', 'src/img/icons/plane_light.png');
+            };
 
         } else {
             $('nav').css({
@@ -20,10 +27,20 @@ function navScrollToStick() {
                 'bottom': 'unset'
             });
 
+            $('nav').css({
+                'background-color': 'var(--regent-saint-blue)'
+            });
+
+            if ($('nav').find('img#plane_icon_header').length > 0) {
+                $('nav').find('img#plane_icon_header').attr('src', '../src/img/icons/plane.png');
+            } else {
+                $('nav').find('img#plane_icon_header_landing').attr('src', 'src/img/icons/plane.png');
+            };
+
             $('div.dropup').addClass('d-none');
             $('div.dropdown').removeClass('d-none');
 
-        }
+        };
 
     });
 };
