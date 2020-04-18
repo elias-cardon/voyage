@@ -1382,6 +1382,10 @@ img.full {
     z-index: 100;
 }
 
+.z-200 {
+    z-index: 200;
+}
+
 
 /*BACKGROUNDS COLORS UTILITIES*/
 
@@ -1416,6 +1420,16 @@ img.full {
     display: flex;
 }
 
+.flex-dir-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-dir-row {
+    display: flex;
+    flex-direction: row;
+}
+
 
 /*FLEX UTILITIES*/
 
@@ -1425,6 +1439,10 @@ img.full {
 
 .justify-center {
     justify-content: center;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
 }
 
 .align-center {
