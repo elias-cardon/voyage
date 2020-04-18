@@ -275,30 +275,35 @@ section.destination-full {
 /* MEDIAS HEADER PLANE LOGO */
 
 @media screen and (min-width:1200px) {
-    #plane_icon_header {
+    #plane_icon_header,
+    #plane_icon_header_landing {
         width: 56px;
     }
 }
 
 @media screen and (min-width: 900px) and (max-width:1199px) {
-    #plane_icon_header {
+    #plane_icon_header,
+    #plane_icon_header_landing {
         width: 48px;
     }
 }
 
 @media screen and (min-width:320px) and (max-width:899px) {
-    #plane_icon_header {
+    #plane_icon_header,
+    #plane_icon_header_landing {
         width: 40px;
     }
 }
 
 @media screen and (max-width:319px) {
-    #plane_icon_header {
+    #plane_icon_header,
+    #plane_icon_header_landing {
         width: 32px;
     }
 }
 
-#plane_icon_header {
+#plane_icon_header,
+#plane_icon_header_landing {
     -webkit-animation-name: bounceInUp;
     animation-name: bounceInUp;
     animation-duration: 3s;
