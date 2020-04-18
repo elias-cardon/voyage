@@ -36,6 +36,14 @@
     animation-duration: 2s;
 }
 
+.taille_A
+{
+    width: 99.9%;
+}
+.taille_B
+{
+    width: 100%;
+}
 
 /*block droite*/
 
