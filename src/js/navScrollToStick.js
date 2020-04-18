@@ -12,13 +12,15 @@ function navScrollToStick() {
             $('div.dropup').removeClass('d-none');
             $('div.dropdown').addClass('d-none');
 
-
+            $('nav').find('img#plane_icon_header').attr('src', '../src/img/icons/plane_light.png');
         } else {
             $('nav').css({
                 'position': 'fixed',
                 'top': '0',
                 'bottom': 'unset'
             });
+
+            $('nav').find('img#plane_icon_header').attr('src', '../src/img/icons/plane.png');
 
             $('div.dropup').addClass('d-none');
             $('div.dropdown').removeClass('d-none');

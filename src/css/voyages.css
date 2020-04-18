@@ -313,7 +313,6 @@ nav {
     z-index: 30000;
     display: flex;
     justify-content: space-between;
-    background-color: var(--regent-saint-blue);
     width: 100%;
 }
 
@@ -737,7 +736,6 @@ button {
 .dropup-sm.regent-saint-blue,
 .dropup-md.regent-saint-blue,
 .dropup-lg.regent-saint-blue {
-    background-color: var(--regent-saint-blue);
     transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease-in-out;
 }
@@ -1377,6 +1375,13 @@ section.jumbotron video {
 }
 
 
+/*TEXT UTILITIES*/
+
+.text-white {
+    color: #FFF;
+}
+
+
 /*DISPLAY UTILITIES*/
 
 .d-none {
@@ -1434,6 +1439,10 @@ blockquote::after {
 
 .filter-grayscale-50:hover {
     filter: none;
+}
+
+.hover-scale:hover {
+    transform: scale(1.5);
 }
 
 

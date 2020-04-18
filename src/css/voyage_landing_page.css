@@ -21,8 +21,8 @@ section.destination-full {
 /*CARDS PAGE SPECIFIC*/
 
 .card-landing {
-    height: 400px;
-    width: 370px;
+    height: 12rem;
+    width: 15rem;
     position: absolute;
     background-color: #FFF;
     transform-origin: bottom left;
