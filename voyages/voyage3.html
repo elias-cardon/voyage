@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Tunisie</title>
     <link rel="stylesheet" href="../src/css/voyages.css">
-    <link rel="stylesheet" type="text/css" href="../src/css/voyageE.css">
+    <link rel="stylesheet" type="text/css" href="../src/css/voyage3.css">
     <link rel="shortcut icon" type="image/x-icon" href="../src/img/pictures/Tunisie/Tunisie.png">
     <!--JQERY CDN-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -97,7 +97,7 @@
                     <div class="card">
                         <span id="ancre_F"></span>
                         <h2 id="titre">Tunisie</h2>
-                        <img src="../src/img/pictures/Tunisie/Tunisie.png" alt="Drapeau_Tunisie" width="99.9%" />
+                        <img class="taille_A" src="../src/img/pictures/Tunisie/Tunisie.png" alt="Drapeau_Tunisie"/>
                         <div class="card-content">
                             <p>Il y a tant de choses à découvrir dans chaque région de la Tunisie : des paysages contrastés, un littoral long de 1250 km parsemé d’îles et d’archipels, des traditions et coutumes diverses, un riche héritage historique.</p>
                         </div>
@@ -110,7 +110,7 @@
                 <li class="carousel-item">
                     <div class="card">
                         <h2 class="card-title">Tunis</h2>
-                        <img src="../src/img/pictures/Tunisie/Tunis.jpg" alt="Avenue Habib Bourguiba" width="99.9%" />
+                        <img class="taille_A" src="../src/img/pictures/Tunisie/Tunis.jpg" alt="Avenue Habib Bourguiba" />
                         <div class="card-content">
                             <p>Cité moderne en pleine expansion et grande ville d’histoire, Tunis n’en finit pas de surprendre. Du côté de la médina, de nombreux édifices anciens ouvrent leurs portes, les uns transformés en musées ou lieux de culture, les
                                 autres en restaurants ou en salons de thé. Inscrite par l’Unesco sur la liste du patrimoine mondial, la médina recèle des merveilles. A ses portes s’étendent des quartiers pittoresques aux belles façades 1900 tandis qu’en
@@ -122,7 +122,7 @@
                 <li class="carousel-item">
                     <div class="card">
                         <h2 class="card-title">Nabeul et le Cap Bon</h2>
-                        <img src="../src/img/pictures/Tunisie/Nabeul.jpg" alt="Sculpture représentant des oranges" width="99.9%" />
+                        <img class="taille_A" src="../src/img/pictures/Tunisie/Nabeul.jpg" alt="Sculpture représentant des oranges"  />
                         <div class="card-content">
                             <p>Promontoire pointé vers la Sicile, la région du Cap Bon est un vaste jardin où les orangers et les citronniers brandissent leurs fruits d’or au cœur de l’hiver. Ses plages de sable fin comptent parmi les plus belles de Tunisie.
                                 Ville principale du Cap Bon, Nabeul est une ville d’artisanat réputée pour sa poterie, ses nattes de jonc et ses essences de fleurs. Le port de pêche de Kélibia, les sources chaudes de Korbous, les fauconniers d’El Haouaria
@@ -138,7 +138,7 @@
                 <li class="carousel-item">
                     <div class="card">
                         <h2 class="card-title">Sousse et Port El-Kantaoui</h2>
-                        <img src="../src/img/pictures/Tunisie/El-Kantaoui.jpg" alt="Port El-Kantaoui" width="100%" />
+                        <img class="taille_B" src="../src/img/pictures/Tunisie/El-Kantaoui.jpg" alt="Port El-Kantaoui"  />
                         <div class="card-content">
                             <p>Longues plages, vieilles pierres, hauts palmiers… Sousse est une ville pleine de séductions où loisirs et exotisme se conjuguent harmonieusement. Grande ville moderne, c’est l'une des stations balnéaires les plus animées de
                                 Tunisie. Ville d’histoire, elle a conservé une magnifique médina et d’exceptionnels monuments du haut Moyen Age. A quelques minutes, une petite ville touristique au cachet andalou a été construite spécialement pour les
@@ -150,7 +150,7 @@
                 <li class="carousel-item">
                     <div class="card">
                         <h2 class="card-title">Tozeur</h2>
-                        <img src="../src/img/pictures/Tunisie/Tozeur.jpg" alt="Cascade Tozeur" width="100%" />
+                        <img class="taille_B" src="../src/img/pictures/Tunisie/Tozeur.jpg" alt="Cascade Tozeur"  />
                         <div class="card-content">
                             <p>Villes surgies du désert et blotties contre d’immenses palmeraies, Tozeur et Nefta surprennent, fascinent et plongent dans le dépaysement. La lumière brûlante du Sahara s’y déverse dans les ruelles des vieux quartiers, entre
                                 les hautes façades de briques blondes. A Tozeur, palaces, parcs à thème et musées ont fleuri autour de la vieille ville. A Nefta, d’innombrables coupoles signalent des tombeaux de saints, dominant l’oasis qui se love dans
@@ -162,7 +162,7 @@
                 <li class="carousel-item">
                     <div class="card">
                         <h2 class="card-title">Douz</h2>
-                        <img src="../src/img/pictures/Tunisie/Douz.jpg" alt="Place des martyrs" width="100%" />
+                        <img class="taille_B" src="../src/img/pictures/Tunisie/Douz.jpg" alt="Place des martyrs"  />
                         <div class="card-content">
                             <p>Couverte d’un fin manteau blanc tel un paysage enneigé, la région de Douz offre la plus douce des approches du désert. Des cordons de dunes et de gracieux bouquets de palmiers longent les routes mangées par le sable. L’immensité
                                 blonde du désert est là, à portée de main, tandis que les palmeraies offrent de délicieuses haltes ombragées dans des forêts de palmiers-dattiers. Au cœur de la région, une immense étendue salée aux reflets changeants :
@@ -468,61 +468,79 @@
             </div>
         </div>
         <div class="Avis">
-            <h2>Votre avis</h2>
-            <form class="form-md" action="" target="_self" method="POST">
-                <div class="form-group">
-                    <label for="user_first_name">Renseigner votre nom</label>
-                    <input type="text" id="user_first_name" name="user_first_name" placeholder="Dupont" required>
-                </div>
-                <div class="form-group">
-                    <label for="user_last_name">Renseigner votre prénom</label>
-                    <input type="text" id="user_last_name" name="user_last_name" placeholder="Jean" required>
-                </div>
-                <div class="row">
-                    Avez-vous des Enfants ?
-                    <div class="form-group-inline">
-                        <label for="example">Oui</label>
-                        <input type="radio" name="example" id="example">
+            <h2 class="titre_form">Réserver un voyage</h2>
+            <fom class="form-lg row" action="" target="_self" id="user_book_trip" method="POST">
+                <div class="col p-0 w-66 relative z-100">
+                    <div class="form-group w-90">
+                        <label for="user_first_name">Renseigner votre nom</label>
+                        <input type="text" id="user_first_name" name="user_first_name" placeholder="Dupont *" required>
                     </div>
-                    <div class="form-group-inline">
-                        <label for="example">Non</label>
-                        <input type="radio" name="example" id="example">
+                    <div class="form-group w-90">
+                        <label for="user_last_name">Renseigner votre prénom</label>
+                        <input type="text" id="user_last_name" name="user_last_name" placeholder="Jack *" required>
+                    </div>
+                    <div class="form-group w-90">
+                        <label for="user_departure_date">Date de départ</label>
+                        <input type="date" id="user_departure_date" name="user_departure_date">
+                    </div>
+                    <div class="form-group w-90">
+                        <label for="user_return_date">Date de retour</label>
+                        <input type="date" id="user_return_date" name="user_return_date">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="">Si oui, combien ?</label>
-                    <select name="" id="">
+                <div class="col p-0 w-66 relative z-100">
+                    <div class="form-group w-90">
+                        <label for="user_boarding_city">Selectionner la ville de départ</label>
+                        <select name="user_boarding_city" id="user_boarding_city">
+                            <option value="">Marseille</option>
+                            <option value="">Paris</option>
+                            <option value="">Lyon</option>
+                            <option value="">Bordeaux</option>
+                            <option value="">Toulouse</option>
+                        </select>
+                    </div>
+                    <div class="form-group w-90">
+                        <label for="user_person_number">Nombre de personne</label>
+                        <select name="user_person_number" id="user_person_number">
                             <option value="">1</option>
                             <option value="">2</option>
                             <option value="">3</option>
                             <option value="">4</option>
-                            <option value="">5+</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10 ou plus</option>
                         </select>
+                    </div>
+                    <div class="row w-90 mb-half-point">
+                        <div class="form-group-inline">
+                            <label for="choiceType">Nourriture</label>
+                            <input type="checkbox" name="" id="choiceType">
+                        </div>
+                        <div class="form-group-inline">
+                            <label for="choiceType">Détente</label>
+                            <input type="checkbox" name="" id="choiceType">
+                        </div>
+                        <div class="form-group-inline">
+                            <label for="choiceType">Luxe</label>
+                            <input type="checkbox" name="" id="choiceType">
+                        </div>
+                    </div>
+                    <div class="row w-90 mb-half-point">
+                        <div class="form-group-inline">
+                            <label for="choiceType">Culture</label>
+                            <input type="checkbox" name="" id="choiceType">
+                        </div>
+                        <div class="form-group-inline">
+                            <label for="choiceType">Aventure</label>
+                            <input type="checkbox" name="" id="choiceType">
+                        </div>
+                    </div>
+
+                    <button type="submit" form="user_book_trip" class="btn-lg regent-saint-blue">Valider</button>
                 </div>
-                <div class="form-group">
-                    <label for="">A quelle période souhaitez-vous allez en Tunisie ?</label>
-                    <input type="date">
-                </div>
-                <div class="row">
-                    Que cherchez-vous lors de vos voyages ?
-                    <div class="form-group-inline">
-                        <label for="choiceType">Détente</label>
-                        <input type="checkbox" name="" id="choiceType">
-                    </div>
-                    <div class="form-group-inline">
-                        <label for="choiceType">Nouveaux horizons</label>
-                        <input type="checkbox" name="" id="choiceType">
-                    </div>
-                    <div class="form-group-inline">
-                        <label for="choiceType">Aventures</label>
-                        <input type="checkbox" name="" id="choiceType">
-                    </div>
-                    <div class="form-group-inline">
-                        <label for="choiceType">Sport</label>
-                        <input type="checkbox" name="" id="choiceType">
-                    </div>
-                </div>
-                <button type="submit" class="btn-md regent-saint-blue"><a href="#ancre_F">Valider</a></button>
             </form>
         </div>
     </main>
