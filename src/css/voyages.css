@@ -1071,6 +1071,9 @@ footer .col {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
+
+footer .col:last-child {
     align-items: center;
 }
 
