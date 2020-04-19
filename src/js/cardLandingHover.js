@@ -1,22 +1,22 @@
 function cardLandingHover() {
     $('.card-landing.two').click(function(event) {
-        $('.card-landing.one').css({ 'transform': 'rotate(-120deg)' });
-        $('.card-landing.two').css({ 'transform': 'rotate(0deg)' });
-        $('.card-landing.three').css({ 'transform': 'rotate(120deg)' });
+        $('.card-landing.one').css({ 'transform': 'translate(-33vw)' });
+        $('.card-landing.two').css({ 'transform': 'none' });
+        $('.card-landing.three').css({ 'transform': 'translate(33vw)' });
         event.stopPropagation();
     });
     $('.card-landing.three').click(function(event) {
 
-        $('.card-landing.one').css({ 'transform': 'rotate(-120deg)' });
-        $('.card-landing.two').css({ 'transform': 'rotate(120deg)' });
-        $('.card-landing.three').css({ 'transform': 'rotate(0deg)' });
+        $('.card-landing.one').css({ 'transform': 'translate(-33vw)' });
+        $('.card-landing.two').css({ 'transform': 'translate(33vw)' });
+        $('.card-landing.three').css({ 'transform': 'translate(0)' });
         event.stopPropagation();
     });
     $('.card-landing.one').click(function(event) {
 
-        $('.card-landing.one').css({ 'transform': 'rotate(0deg)' });
-        $('.card-landing.two').css({ 'transform': 'rotate(120deg)' });
-        $('.card-landing.three').css({ 'transform': 'rotate(-120deg)' });
+        $('.card-landing.one').css({ 'transform': 'translate(0)' });
+        $('.card-landing.two').css({ 'transform': 'translate(33vw)' });
+        $('.card-landing.three').css({ 'transform': 'translate(-33vw)' });
         event.stopPropagation();
     });
 

@@ -21,11 +21,10 @@ section.destination-full {
 /*CARDS PAGE SPECIFIC*/
 
 .card-landing {
-    height: 15rem;
-    width: 20rem;
+    height: 10rem;
+    width: 15rem;
     position: absolute;
     background-color: #FFF;
-    transform-origin: bottom left;
     transition: all 1s ease-in-out;
     cursor: pointer;
 }
