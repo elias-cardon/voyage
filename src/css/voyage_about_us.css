@@ -1,35 +1,6 @@
-.about-us {
-    height: 100vh;
-    width: 100vw;
-    position: relative;
-    background-image: url(../img/backgrounds/hand.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.overlay-about-us {
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(255, 255, 255, 0.55);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
 .bg-regent-saint-blue {
     background-color: var(--regent-saint-blue-overlay-high);
     min-height: 100vh;
-}
-
-.card-team {
-    height: 12rem;
-    width: 18rem;
-    margin: 2rem;
-    background-color: #FFF;
-    position: relative;
-    cursor: pointer;
 }
 
 .card-container {
@@ -85,4 +56,65 @@
     padding-left: 2rem;
     padding-right: 2rem;
     font-size: 0.75rem;
+}
+
+@media screen and (min-width:1500px) {
+    .about-us {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        background-image: url(../img/backgrounds/hand.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .overlay-about-us {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(255, 255, 255, 0.55);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .card-team {
+        height: 12rem;
+        width: 18rem;
+        margin: 2rem;
+        background-color: #FFF;
+        position: relative;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:1499px) {
+    .about-us {
+        min-height: 100vh;
+        width: 100vw;
+        position: relative;
+        background-image: url(../img/backgrounds/hand.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .overlay-about-us {
+        min-height: 100vh;
+        width: 100vw;
+        background-color: rgba(255, 255, 255, 0.55);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .card-team {
+        height: 12rem;
+        width: 18rem;
+        background-color: #FFF;
+        position: relative;
+        cursor: pointer;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
