@@ -17,7 +17,7 @@ html {
     --mustard-overlay-medium: rgba(255, 225, 78, .50);
     --aquamarine-overlay-medium: rgba(78, 255, 172, .50);
     /*HIGH*/
-    --regent-saint-blue-overlay-high: rgba(162, 194, 218, .75);
+    --regent-saint-blue-overlay-high: rgba(162, 194, 218, .66);
     --mustard-overlay-high: rgba(255, 225, 78, .75);
     --aquamarine-overlay-high: rgba(78, 255, 172, .75);
 }
@@ -1331,8 +1331,16 @@ img.full {
     padding: 0;
 }
 
+.p-4 {
+    padding: 4rem;
+}
+
 .m-0 {
     margin: 0;
+}
+
+.m-4 {
+    margin: 4rem;
 }
 
 .ml-2 {
