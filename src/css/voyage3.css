@@ -8,8 +8,6 @@
     border-radius: 8px;
     padding: 1rem;
     height: 100%;
-    animation-name: rollIn;
-    animation-duration: 2s;
 }
 
 #titre {
@@ -32,8 +30,6 @@
     position: relative;
     top: 5px;
     padding-top: 2%;
-    animation-name: rollIn;
-    animation-duration: 2s;
 }
 
 .taille_A
@@ -57,11 +53,6 @@ p {
     padding: 0 10px;
 }
 
-.right,
-.droite {
-    animation-name: rollIn;
-    animation-duration: 2s;
-}
 
 .right {
     display: flex;
@@ -75,39 +66,12 @@ p {
 
 /*block gauche*/
 
-.left,
-.gauche {
-    animation-name: rollIn;
-    animation-duration: 2s;
-}
 
 .left {
     display: flex;
     flex-direction: row-reverse;
-    animation-name: rollIn;
-    animation-duration: 2s;
 }
 
 .gauche {
     text-align: left;
-}
-
-
-/*fondu images*/
-
-.fondu_img {
-    filter: grayscale(1);
-    -webkit-filter: grayscale(1);
-    -moz-filter: grayscale(1);
-    -o-filter: grayscale(1);
-    -ms-filter: grayscale(1);
-}
-
-.fondu_img:hover {
-    filter: grayscale(0);
-    -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    -o-filter: grayscale(0);
-    -ms-filter: grayscale(0);
-    transition: all 225ms 0ms ease-in-out
 }
