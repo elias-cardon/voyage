@@ -38,7 +38,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin:50px;
+    margin: 50px;
     width: fit-content;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     border-radius: 3px;
@@ -147,13 +147,16 @@ h3 {
 .page-ajustement-3 p {
     padding-left: 30px;
 }
+
 .page-ajustement-3 a {
-    color:#A2C2DA;
+    color: #A2C2DA;
     transition: 0.3s;
 }
+
 .page-ajustement-3 a:hover {
-    opacity:0.7;
+    opacity: 0.7;
 }
+
 footer {
     height: 10vh;
     background-color: tomato;
@@ -188,17 +191,20 @@ footer {
     overflow: hidden;
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
     .section-5 h2 {
         text-decoration: underline;
         text-align: center;
     }
+
     .section-5 h3 {
         text-align: right;
     }
+
     .section-5 p {
         margin: 15px;
     }
+
     .bg-cover-welcome-hot {
         background-image: url(../img/pictures/las_vegas/empty-road-hot.jpg);
         background-size: cover;
@@ -210,17 +216,21 @@ footer {
         border-radius: 3px;
         overflow: hidden;
     }
+
     .quand-y-aller div {
         width: 50%;
     }
+
     .section-5 h3 {
         text-align: right;
     }
+
     .block-principal {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .block-principal div {
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
         border-radius: 3px;
@@ -230,34 +240,40 @@ footer {
         width: 500px;
         transition: 0.3s;
     }
+
     .quand-y-aller {
         display: flex;
     }
+
     .quand-y-aller img {
         width: 33%;
         margin-right: 20px;
     }
 }
 
-@media screen and (max-width:1199px) {
+@media screen and (max-width: 1199px) {
     .section-5.quand-y-aller {
         display: flex;
         flex-direction: column;
     }
+
     .page-ajustement-3,
     .bg-cover-welcome-hot {
         min-width: 100%;
     }
+
     h1,
     h2,
     .section-5 h3 {
         text-align: center;
     }
+
     .block-principal {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .block-principal div {
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
         border-radius: 3px;
@@ -267,6 +283,7 @@ footer {
         width: 500px;
         transition: 0.3s;
     }
+
     .bg-cover-welcome-hot {
         background-image: url(../img/pictures/las_vegas/empty-road-hot.jpg);
         background-size: cover;

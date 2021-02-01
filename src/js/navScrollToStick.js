@@ -1,6 +1,6 @@
 function navScrollToStick() {
     var navFromTop = $('nav').offset().top;
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         scrollValue = $(document).scrollTop();
 
         if (scrollValue <= navFromTop) {
@@ -18,7 +18,8 @@ function navScrollToStick() {
                 $('nav').find('img#plane_icon_header').attr('src', '../src/img/icons/plane_light.png');
             } else {
                 $('nav').find('img#plane_icon_header_landing').attr('src', 'src/img/icons/plane_light.png');
-            };
+            }
+            ;
 
         } else {
             $('nav').css({
@@ -35,12 +36,14 @@ function navScrollToStick() {
                 $('nav').find('img#plane_icon_header').attr('src', '../src/img/icons/plane.png');
             } else {
                 $('nav').find('img#plane_icon_header_landing').attr('src', 'src/img/icons/plane.png');
-            };
+            }
+            ;
 
             $('div.dropup').addClass('d-none');
             $('div.dropdown').removeClass('d-none');
 
-        };
+        }
+        ;
 
     });
 };

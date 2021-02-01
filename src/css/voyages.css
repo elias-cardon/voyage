@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Varela&display=swap');
+
 html {
     /*COLOR SCHEME*/
     --regent-saint-blue: #A2C2DA;
@@ -274,28 +275,28 @@ section.destination-full {
 
 /* MEDIAS HEADER PLANE LOGO */
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
     #plane_icon_header,
     #plane_icon_header_landing {
         width: 56px;
     }
 }
 
-@media screen and (min-width: 900px) and (max-width:1199px) {
+@media screen and (min-width: 900px) and (max-width: 1199px) {
     #plane_icon_header,
     #plane_icon_header_landing {
         width: 48px;
     }
 }
 
-@media screen and (min-width:320px) and (max-width:899px) {
+@media screen and (min-width: 320px) and (max-width: 899px) {
     #plane_icon_header,
     #plane_icon_header_landing {
         width: 40px;
     }
 }
 
-@media screen and (max-width:319px) {
+@media screen and (max-width: 319px) {
     #plane_icon_header,
     #plane_icon_header_landing {
         width: 32px;
@@ -403,19 +404,23 @@ li {
     list-style: none;
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
     h1 {
         font-size: 56px;
     }
+
     h2 {
         font-size: 50px;
     }
+
     h3 {
         font-size: 46px;
     }
+
     h4 {
         font-size: 42px;
     }
+
     html,
     label,
     input,
@@ -428,19 +433,23 @@ li {
     }
 }
 
-@media screen and (min-width:900px) and (max-width:1199px) {
+@media screen and (min-width: 900px) and (max-width: 1199px) {
     h1 {
         font-size: 48px;
     }
+
     h2 {
         font-size: 42px;
     }
+
     h3 {
         font-size: 38px;
     }
+
     h4 {
         font-size: 34px;
     }
+
     html,
     label,
     input,
@@ -453,19 +462,23 @@ li {
     }
 }
 
-@media screen and (min-width:320px) and (max-width:899px) {
+@media screen and (min-width: 320px) and (max-width: 899px) {
     h1 {
         font-size: 40px;
     }
+
     h2 {
         font-size: 34px;
     }
+
     h3 {
         font-size: 30px;
     }
+
     h4 {
         font-size: 26px;
     }
+
     html,
     label,
     input,
@@ -478,19 +491,23 @@ li {
     }
 }
 
-@media screen and (max-width:319px) {
+@media screen and (max-width: 319px) {
     h1 {
         font-size: 32px;
     }
+
     h2 {
         font-size: 26px;
     }
+
     h3 {
         font-size: 22px;
     }
+
     h4 {
         font-size: 18px;
     }
+
     html,
     label,
     input,
@@ -810,17 +827,17 @@ button {
     z-index: 5000;
 }
 
-.dropdown-content:hover+.img-arrow,
-.dropup-content:hover+.img-arrow {
+.dropdown-content:hover + .img-arrow,
+.dropup-content:hover + .img-arrow {
     z-index: 5000;
 }
 
-.dropdown-lg img:hover+.dropdown-content,
-.dropdown-md img:hover+.dropdown-content,
-.dropdown-sm img:hover+.dropdown-content,
-.dropup-lg img:hover+.dropup-content,
-.dropup-md img:hover+.dropup-content,
-.dropup-sm img:hover+.dropup-content {
+.dropdown-lg img:hover + .dropdown-content,
+.dropdown-md img:hover + .dropdown-content,
+.dropdown-sm img:hover + .dropdown-content,
+.dropup-lg img:hover + .dropup-content,
+.dropup-md img:hover + .dropup-content,
+.dropup-sm img:hover + .dropup-content {
     display: flex;
     position: absolute;
     background-color: #FFF;
@@ -832,42 +849,42 @@ button {
 
 /*DROPDOWN*/
 
-.dropdown-lg img:hover+.dropdown-content {
+.dropdown-lg img:hover + .dropdown-content {
     top: 2.5rem
 }
 
 
 /*DROPUP*/
 
-.dropup-lg img:hover+.dropup-content {
+.dropup-lg img:hover + .dropup-content {
     bottom: 2.5rem
 }
 
 
 /*DROPDOWN*/
 
-.dropdown-md img:hover+.dropdown-content {
+.dropdown-md img:hover + .dropdown-content {
     top: 2rem
 }
 
 
 /*DROPUP*/
 
-.dropup-md img:hover+.dropup-content {
+.dropup-md img:hover + .dropup-content {
     bottom: 2rem
 }
 
 
 /*DROPDOWN*/
 
-.dropdown-sm img:hover+.dropdown-content {
+.dropdown-sm img:hover + .dropdown-content {
     top: 1.5rem
 }
 
 
 /*DROPUPS*/
 
-.dropup-sm img:hover+.dropup-content {
+.dropup-sm img:hover + .dropup-content {
     bottom: 1.5rem
 }
 
@@ -1514,15 +1531,17 @@ blockquote::after {
 
 /*MEDIA HIDDEN CONTENT*/
 
-@media screen and (max-width:1300px) {
+@media screen and (max-width: 1300px) {
     .col.d-sm-xs-none {
         display: none;
     }
+
     .col.text {
         min-height: 50vh;
         justify-content: flex-start;
         padding: 1rem;
     }
+
     .destination-full {
         display: flex;
         justify-content: space-evenly;
@@ -1530,6 +1549,7 @@ blockquote::after {
         flex-direction: column;
         position: relative;
     }
+
     .absolute-sm-xs {
         position: absolute;
     }
