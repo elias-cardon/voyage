@@ -5,7 +5,7 @@
   </a>
 </p>
 
-> Ce projet présente des pays ou villes que les auteurs ont visité. Il y a une page d'accueil à partir de laquelle nous pouvons accéder aux pages des pays et aux pages présentant les auteurs. Le projet présente l'Islande, Las Vegas et la Tunisie.
+> Ce projet est des gros projets de ma formation. Il présente des pays ou villes que les auteurs ont visité. Il y a une page d'accueil à partir de laquelle nous pouvons accéder aux pages des pays et aux pages présentant les auteurs. Le projet présente l'Islande, Las Vegas et la Tunisie.
 
 ### 🏠 [Homepage](https://elias-cardon.students-laplateforme.io/Voyage/)
 
